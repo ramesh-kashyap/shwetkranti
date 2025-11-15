@@ -31,9 +31,15 @@
                                               <label class="form-label"> Amount</label>
                                             
                                            
-                                              
-                                               <input class="form-control"  type="number"     placeholder=" Enter Amount"  name="amount"
-                                                  value="" >
+                                                     <select name="amount" required
+                                        class="form-control">
+                                        <option value="10000">10000</option>
+                                        <option value="80000">80000</option>
+                                           <option value="120000">120000</option>
+                                        <option value="800000">800000</option>
+                                           <option value="1200000">1200000</option>
+
+                                    </select>
                                                   
                                           </div>
    
