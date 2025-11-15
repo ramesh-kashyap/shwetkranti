@@ -17,185 +17,178 @@ use Validator;
 
 class Bonus extends Controller
 {
-    public function index(Request $request)
-    {
-       $user=Auth::user();
+  public function index(Request $request)
+  {
+    $user = Auth::user();
 
-          $limit = $request->limit ? $request->limit : paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Fast Track Income')->orderBy('id', 'DESC');
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('level', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-        $this->data['level_income'] =$notes;
-        $this->data['search'] =$search;
-        $this->data['page'] = 'user.bonus.level-income';
-        return $this->dashboard_layout();
-
-
+    $limit = $request->limit ? $request->limit : paginationLimit();
+    $status = $request->status ? $request->status : null;
+    $search = $request->search ? $request->search : null;
+    $notes = Income::where('user_id', $user->id)->where('remarks', 'Fast Track Income')->orderBy('id', 'DESC');
+    if ($search <> null && $request->reset != "Reset") {
+      $notes = $notes->where(function ($q) use ($search) {
+        $q->Where('rname', 'LIKE', '%' . $search . '%')
+          ->orWhere('ttime', 'LIKE', '%' . $search . '%')
+          ->orWhere('level', 'LIKE', '%' . $search . '%')
+          ->orWhere('amt', 'LIKE', '%' . $search . '%')
+          ->orWhere('comm', 'LIKE', '%' . $search . '%');
+      });
     }
+    $notes = $notes->paginate($limit)
+      ->appends([
+        'limit' => $limit
+      ]);
+    $this->data['level_income'] = $notes;
+    $this->data['search'] = $search;
+    $this->data['page'] = 'user.bonus.level-income';
+    return $this->dashboard_layout();
+  }
 
-    public function direct_income(Request $request)
-    {
-       $user=Auth::user();
+  public function direct_income(Request $request)
+  {
+    $user = Auth::user();
 
-          $limit = $request->limit ? $request->limit : paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','CBR Income')->orderBy('id', 'DESC');
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('level', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-        $this->data['level_income'] =$notes;
-        $this->data['search'] =$search;
-        $this->data['page'] = 'user.bonus.direct-income';
-        return $this->dashboard_layout();
-
-
+    $limit = $request->limit ? $request->limit : paginationLimit();
+    $status = $request->status ? $request->status : null;
+    $search = $request->search ? $request->search : null;
+    $notes = Income::where('user_id', $user->id)->where('remarks', 'CBR Income')->orderBy('id', 'DESC');
+    if ($search <> null && $request->reset != "Reset") {
+      $notes = $notes->where(function ($q) use ($search) {
+        $q->Where('rname', 'LIKE', '%' . $search . '%')
+          ->orWhere('ttime', 'LIKE', '%' . $search . '%')
+          ->orWhere('level', 'LIKE', '%' . $search . '%')
+          ->orWhere('amt', 'LIKE', '%' . $search . '%')
+          ->orWhere('comm', 'LIKE', '%' . $search . '%');
+      });
     }
+    $notes = $notes->paginate($limit)
+      ->appends([
+        'limit' => $limit
+      ]);
+    $this->data['level_income'] = $notes;
+    $this->data['search'] = $search;
+    $this->data['page'] = 'user.bonus.direct-income';
+    return $this->dashboard_layout();
+  }
 
 
-    public function cashback_bonus(Request $request)
-    {
-       $user=Auth::user();
+  public function cashback_bonus(Request $request)
+  {
+    $user = Auth::user();
 
-          $limit = $request->limit ? $request->limit : paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Referral Income')->orderBy('id', 'DESC');
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('level', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-        $this->data['level_income'] =$notes;
-        $this->data['search'] =$search;
-        $this->data['page'] = 'user.bonus.cashback-bonus';
-        return $this->dashboard_layout();
-
-
+    $limit = $request->limit ? $request->limit : paginationLimit();
+    $status = $request->status ? $request->status : null;
+    $search = $request->search ? $request->search : null;
+    $notes = Income::where('user_id', $user->id)->where('remarks', 'Referral Income')->orderBy('id', 'DESC');
+    if ($search <> null && $request->reset != "Reset") {
+      $notes = $notes->where(function ($q) use ($search) {
+        $q->Where('rname', 'LIKE', '%' . $search . '%')
+          ->orWhere('ttime', 'LIKE', '%' . $search . '%')
+          ->orWhere('level', 'LIKE', '%' . $search . '%')
+          ->orWhere('amt', 'LIKE', '%' . $search . '%')
+          ->orWhere('comm', 'LIKE', '%' . $search . '%');
+      });
     }
+    $notes = $notes->paginate($limit)
+      ->appends([
+        'limit' => $limit
+      ]);
+    $this->data['level_income'] = $notes;
+    $this->data['search'] = $search;
+    $this->data['page'] = 'user.bonus.cashback-bonus';
+    return $this->dashboard_layout();
+  }
 
-    public function reward_income(Request $request)
-    {
-    $user=Auth::user();
+  public function reward_income(Request $request)
+  {
+    $user = Auth::user();
 
-    $this->data['first_lvl'] = Reward::where('user_id',$user->id)->where('level',1)->count('id');
-    $this->data['second_lvl'] = Reward::where('user_id',$user->id)->where('level',2)->count('id');
-    $this->data['third_lvl'] = Reward::where('user_id',$user->id)->where('level',3)->count('id');
-    $this->data['four_lvl'] = Reward::where('user_id',$user->id)->where('level',4)->count('id');
-    $this->data['five_lvl'] = Reward::where('user_id',$user->id)->where('level',5)->count('id');
-    $this->data['six_lvl'] = Reward::where('user_id',$user->id)->where('level',6)->count('id');
-    $this->data['seven_lvl'] = Reward::where('user_id',$user->id)->where('level',7)->count('id');
-    $this->data['eight_lvl'] = Reward::where('user_id',$user->id)->where('level',8)->count('id');
-    $this->data['nine_lvl'] = Reward::where('user_id',$user->id)->where('level',9)->count('id');
-    $this->data['ten_lvl'] = Reward::where('user_id',$user->id)->where('level',10)->count('id');
-    $this->data['eleven_lvl'] = Reward::where('user_id',$user->id)->where('level',11)->count('id');
+    $this->data['first_lvl'] =  Reward::where('user_id', $user->id)->where('level', 1)->count();
+    $this->data['second_lvl'] = Reward::where('user_id', $user->id)->where('level', 2)->count();
+    $this->data['third_lvl'] =  Reward::where('user_id', $user->id)->where('level', 3)->count();
+    $this->data['four_lvl'] =   Reward::where('user_id', $user->id)->where('level', 4)->count();
+    $this->data['five_lvl'] =   Reward::where('user_id', $user->id)->where('level', 5)->count();
+    $this->data['six_lvl'] =    Reward::where('user_id', $user->id)->where('level', 6)->count();
+    $this->data['seven_lvl'] =  Reward::where('user_id', $user->id)->where('level', 7)->count();
+    $this->data['eight_lvl'] =  Reward::where('user_id', $user->id)->where('level', 8)->count();
+    $this->data['nine_lvl'] =   Reward::where('user_id', $user->id)->where('level', 9)->count();
+    $this->data['ten_lvl'] =    Reward::where('user_id', $user->id)->where('level', 10)->count();
+    $this->data['eleven_lvl'] = Reward::where('user_id', $user->id)->where('level', 11)->count();
+    $this->data['twel_lvl'] = Reward::where('user_id', $user->id)->where('level', 12)->count();
+    $this->data['thirteen_lvl'] = Reward::where('user_id', $user->id)->where('level', 13)->count();
+    $this->data['fourteen_lvl'] = Reward::where('user_id', $user->id)->where('level', 14)->count();
+    $this->data['fifteen_lvl'] = Reward::where('user_id', $user->id)->where('level', 15)->count();
+    $this->data['sixteen_lvl'] = Reward::where('user_id', $user->id)->where('level', 16)->count();
+    $this->data['seventeen_lvl'] = Reward::where('user_id', $user->id)->where('level', 17)->count();
+    $this->data['eighteen_lvl'] = Reward::where('user_id', $user->id)->where('level', 18)->count();
+
     $this->data['page'] = 'user.bonus.reward-bonus';
     return $this->dashboard_layout();
+  }
 
+
+
+  public function roi_income(Request $request)
+  {
+    $user = Auth::user();
+
+
+    $limit = $request->limit ? $request->limit :  paginationLimit();
+    $status = $request->status ? $request->status : null;
+    $search = $request->search ? $request->search : null;
+    $notes = Income::where('user_id', $user->id)->where('remarks', 'Royalty Income')->orderBy('id', 'DESC');
+
+    if ($search <> null && $request->reset != "Reset") {
+      $notes = $notes->where(function ($q) use ($search) {
+        $q->Where('ttime', 'LIKE', '%' . $search . '%')
+          ->orWhere('amt', 'LIKE', '%' . $search . '%')
+          ->orWhere('rname', 'LIKE', '%' . $search . '%')
+          ->orWhere('comm', 'LIKE', '%' . $search . '%');
+      });
     }
 
- 
+    $notes = $notes->paginate($limit)
+      ->appends([
+        'limit' => $limit
+      ]);
 
-    public function roi_income(Request $request)
-    {
-           $user=Auth::user();
-
-
-          $limit = $request->limit ? $request->limit :  paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Royalty Income')->orderBy('id', 'DESC');
-
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-
-    $this->data['level_income'] =$notes;
-    $this->data['search'] =$search;
+    $this->data['level_income'] = $notes;
+    $this->data['search'] = $search;
     $this->data['page'] = 'user.bonus.roi-bonus';
     return $this->dashboard_layout();
+  }
 
+
+
+
+
+  public function  direct_sponor_level(Request $request)
+  {
+    $user = Auth::user();
+
+
+    $limit = $request->limit ? $request->limit :  paginationLimit();
+    $status = $request->status ? $request->status : null;
+    $search = $request->search ? $request->search : null;
+    $notes = Income::where('user_id', $user->id)->where('remarks', 'Reward Income')->orderBy('id', 'DESC');
+
+    if ($search <> null && $request->reset != "Reset") {
+      $notes = $notes->where(function ($q) use ($search) {
+        $q->Where('ttime', 'LIKE', '%' . $search . '%')
+          ->orWhere('amt', 'LIKE', '%' . $search . '%')
+          ->orWhere('rname', 'LIKE', '%' . $search . '%')
+          ->orWhere('comm', 'LIKE', '%' . $search . '%');
+      });
     }
 
+    $notes = $notes->paginate($limit)
+      ->appends([
+        'limit' => $limit
+      ]);
 
-
-
-
-    public function  direct_sponor_level(Request $request)
-    {
-           $user=Auth::user();
-
-
-          $limit = $request->limit ? $request->limit :  paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Reward Income')->orderBy('id', 'DESC');
-
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-
-    $this->data['level_income'] =$notes;
-    $this->data['search'] =$search;
+    $this->data['level_income'] = $notes;
+    $this->data['search'] = $search;
     $this->data['page'] = 'user.bonus.direct';
     return $this->dashboard_layout();
-
-    }
-
+  }
 }

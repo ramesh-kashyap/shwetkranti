@@ -438,6 +438,7 @@
                             <li><a href="{{route('user.direct_sponor_level')}}">Reward Income</a></li>
 
                             <li><a href="{{route('user.team_bonanza')}}">Royalty Income</a></li>
+                            <li><a href="{{route('user.reward-bonus')}}">Reward Bonus</a></li>
 
 
                         </ul>
