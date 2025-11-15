@@ -1,71 +1,72 @@
-
-
-
-        <!--**********************************
+<!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body">
-            <div class="container-fluid">
-				
-				<div class="row page-titles">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item active"><a href="javascript:void(0)">Activation </a></li>
-						<li class="breadcrumb-item"><a href="javascript:void(0)">Deposit Lists</a></li>
-					</ol>
-                </div>
-                <!-- row -->
+<div class="content-body">
+    <div class="container-fluid">
+
+        <div class="row page-titles">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Activation </a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Deposit Lists</a></li>
+            </ol>
+        </div>
+        <!-- row -->
 
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Deposit Lists</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example" class="display" style="min-width: 845px">
-                                        <thead>
-                                            <tr>
-                                                <th>#S.NO</th>
-                                                <th>User ID</th>
-                                                <th>Amount</th>
-                                                <th>Transaction Date</th>
-                                                <th>Transaction ID</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php if(is_array($deposit_list) || is_object($deposit_list)){ ?>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Deposit Lists</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="example" class="display" style="min-width: 845px">
+                                <thead>
+                                    <tr>
+                                        <th>#S.NO</th>
+                                        <th>User ID</th>
+                                        <th>Amount</th>
+                                        <th>Slip</th>
+                                        <th>Transaction Date</th>
+                                        <th>Transaction ID</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php if (is_array($deposit_list) || is_object($deposit_list)) { ?>
 
-                                                <?php $cnt = 0; ?>
-                                                @foreach($deposit_list as $value)
-                                                    <tr>
-                                                        <td><?= $cnt += 1?></td>
-                                                        <td>{{ $value->user_id_fk }}</td>
-    
-                                                        <td>{{currency()}} {{ $value->amount }}</td>
-                                                        <td>{{ $value->sdate }}</td>
-                                                        <td>{{ $value->transaction_id }}</td>
-                                                        <td><span
-                                                            class="badge badge-{{ ($value->status=='Active')?'success':'danger' }}">{{ $value->status }}</span></td>
-    
-                                                    </tr>
-                                                @endforeach
-    
-                                                <?php }?>
+                                        <?php $cnt = 0; ?>
+                                        @foreach($deposit_list as $value)
+                                        <tr>
+                                            <td><?= $cnt += 1 ?></td>
+                                            <td>{{ $value->user_id_fk }}</td>
 
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                                            <td>{{currency()}} {{ $value->amount }}</td>
+                                            <td>
+                                                <img src="{{ asset('uploads/' . $value->slip) }}" alt="Slip Image" width="160" height="140">
+                                            </td>
+                                            <td>{{ $value->sdate }}</td>
+                                            <td>{{ $value->transaction_id }}</td>
+                                            <td><span
+                                                    class="badge badge-{{ ($value->status=='Active')?'success':'danger' }}">{{ $value->status }}</span></td>
+
+                                        </tr>
+                                        @endforeach
+
+                                    <?php } ?>
+
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                 
-					
-				</div>
+                </div>
             </div>
+
+
         </div>
-        <!--**********************************
+    </div>
+</div>
+<!--**********************************
             Content body end
         ***********************************-->
