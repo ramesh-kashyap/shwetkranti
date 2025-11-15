@@ -91,6 +91,10 @@ Route::post('/walletTransfers', [App\Http\Controllers\UserPanel\AddFund::class, 
 
 // invest
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
+Route::any('/confirmDeposit', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit'])->name('user.confirmDeposit');
+
+Route::any('/confirmDeposits', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposits'])->name('user.confirmDeposits');
+
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
 Route::get('/DepositHistory', [App\Http\Controllers\UserPanel\Invest::class, 'invest_list'])->name('user.DepositHistory');
 Route::get('/boster', [App\Http\Controllers\UserPanel\Invest::class, 'boster'])->name('user.boster');

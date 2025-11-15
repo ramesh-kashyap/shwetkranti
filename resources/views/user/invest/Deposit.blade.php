@@ -22,10 +22,10 @@
                           <div class="card-body">
                               <div class="basic-form">
                                 
-                                  <form action="{{ route('user.fundActivation') }}" method="POST" enctype="multipart/form-data">
+                                  <form action="{{ route('user.confirmDeposits') }}" method="POST" enctype="multipart/form-data">
                                    {{ csrf_field() }}
 
-                              <h5>  Total Fund Balance {{ currency() }}{{ number_format(Auth::user()->fund_balance(), 2) }}</h5>
+                              <!-- <h5>  Total Fund Balance {{ currency() }}{{ number_format(Auth::user()->fund_balance(), 2) }}</h5> -->
                                       <div class="row">
                                           <div class="mb-3 col-md-12">
                                               <label class="form-label"> Amount</label>
@@ -33,26 +33,23 @@
                                            
                                               
                                                <input class="form-control"  type="number"    placeholder=""  name="amount"
-                                                  value="35" disabled>
+                                                  value="" >
                                                   
                                           </div>
    
                                           <div class="mb-3 col-md-12">
                                               <label class="form-label">Payment Mode</label>
-                                              <input class="form-control" readonly type="text" placeholder=""  name=""
-                                                  value="USDT" disabled>
+                                          
+
+                                                    <select name="paymentMode" required
+                                        class="form-control">
+                                        <option value="INR">INR</option>
+                                        <option value="USDT">USDT</option>
+
+                                    </select>
                                           </div>
 
-                                          <div class="mb-3 col-md-12">
-                                            <label class="form-label">User ID</label>
-                                            <input type="text" name="username"  class="form-control " autocomplete="off" placeholder="User ID"required value="">
-                                        </div>
-
-                                        <div class="mb-3 col-md-12">
-                                            <label class="form-label">Transaction Password</label>
-
-                                            <input maxlength="140" step="" enterkeyhint="done" required="" autocomplete="off" placeholder="Transaction Password" name="transaction_password" type="password" class="form-control">
-                                        </div>
+                          
 
 
 
