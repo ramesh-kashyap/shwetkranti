@@ -1440,7 +1440,7 @@
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1454,7 +1454,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="{{route('blog')}}" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-3.jpg" alt="">
                                 </figure>
@@ -1466,13 +1466,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">How Organic Dairy Farming Supports a Healthier Planet</a></h2>
+                                <h2><a href="{{route('about-us')}}">How Organic Dairy Farming Supports a Healthier Planet</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>

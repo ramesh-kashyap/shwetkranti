@@ -71,7 +71,7 @@
                     <div class="post-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-1.jpg" alt="">
                                 </figure>    
@@ -83,13 +83,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">The Role of Biodiversity in Sustainable Dairy Farming</a></h2>
+                                <h2><a href="#">The Role of Biodiversity in Sustainable Dairy Farming</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -103,7 +103,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-2.jpg" alt="">
                                 </figure>    
@@ -115,13 +115,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</a></h2>
+                                <h2><a href="#">Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -135,7 +135,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-3.jpg" alt="">
                                 </figure>    
@@ -147,13 +147,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">How Organic Dairy Farming Supports a Healthier Planet</a></h2>
+                                <h2><a href="#">How Organic Dairy Farming Supports a Healthier Planet</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -167,7 +167,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.6s" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-4.jpg" alt="">
                                 </figure>    
@@ -179,13 +179,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Explore how humane animal care natural feeding directly</a></h2>
+                                <h2><a href="#">Explore how humane animal care natural feeding directly</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -199,7 +199,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-5.jpg" alt="">
                                 </figure>    
@@ -211,13 +211,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Understand the of temperature-controlled delivery maintaining milk</a></h2>
+                                <h2><a href="#">Understand the of temperature-controlled delivery maintaining milk</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -231,7 +231,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-6.jpg" alt="">
                                 </figure>    
@@ -243,13 +243,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Discover how pasture-based chemical-free diets contribute to richer</a></h2>
+                                <h2><a href="#">Discover how pasture-based chemical-free diets contribute to richer</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
