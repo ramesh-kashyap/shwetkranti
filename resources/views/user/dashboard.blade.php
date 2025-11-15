@@ -117,9 +117,9 @@
 									<img class="pattern-img" src="https://dompet.dexignlab.com/laravel/demo/images/pattern/pattern6.png" alt="">
 									<div class="card-info text-white">
 										<img src="https://dompet.dexignlab.com/laravel/demo/images/pattern/circle.png" class="mb-4" alt="">
-										<h2 class="text-white card-balance">$824,571.93</h2>
+										<h2 class="text-white card-balance">{{ currency() }} {{ number_format((Auth::user()->available_balance()>=0)?Auth::user()->available_balance():0, 2) }}</h2>
 										<p class="fs-16">Wallet Balance</p>
-										<span>+0,8% than last week</span>
+										<span> Top Date {{ Auth::user()->adate ? date('D, d M Y h:i:s a', strtotime(Auth::user()->adate)) : '' }}</span>
 									</div>
 									<a class="change-btn active" href="javascript:void(0);"><i class="fa fa-caret-up up-ico"></i>Change<span class="reload-icon"><i class="fas fa-sync-alt reload active" style="transform: translateZ(0px) rotateZ(360deg);"></i></span></a>
 								</div>
@@ -181,25 +181,25 @@
 
 							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
 									Joining</strong> <span class="mb-0">{{ date('D, d M Y h:i:s a', strtotime(Auth::user()->created_at)) }}</span> </li>
-							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
-									Topup</strong> <span class="mb-0"> {{ Auth::user()->adate ? date('D, d M Y h:i:s a', strtotime(Auth::user()->adate)) : '' }}</span> </li>
+							<!-- <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
+									Topup</strong> <span class="mb-0"> {{ Auth::user()->adate ? date('D, d M Y h:i:s a', strtotime(Auth::user()->adate)) : '' }}</span> </li> -->
 
 
 							<li class="list-group-item d-flex px-0 justify-content-between">
-								<strong>Team Business 1 Line</strong>
+								<strong>Team Business A</strong>
 								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamA, 2) }}</span>
 							</li>
 
 							<li class="list-group-item d-flex px-0 justify-content-between">
-								<strong>Team Business 2 Line</strong>
+								<strong>Team Business B</strong>
 								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamB, 2) }}</span>
 							</li>
 
 
-							<li class="list-group-item d-flex px-0 justify-content-between">
+							<!-- <li class="list-group-item d-flex px-0 justify-content-between">
 								<strong>Team Business 3 Line</strong>
 								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->other_team, 2) }}</span>
-							</li>
+							</li> -->
 
 						</ul>
 					</div>
