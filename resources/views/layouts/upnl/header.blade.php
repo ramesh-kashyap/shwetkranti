@@ -373,7 +373,7 @@
                     </li>
 
 
-
+<!-- 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-043-menu"></i>
                             <span class="nav-text">Wallet</span>
@@ -387,7 +387,7 @@
                             <i class="flaticon-025-dashboard"></i>
                             <span class="nav-text">Wallet Transfer</span>
                         </a>
-                    </li>
+                    </li> -->
 
 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -401,7 +401,7 @@
                     </li>
 
 
-
+<!-- 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-043-menu"></i>
                             <span class="nav-text">By Self Package</span>
@@ -410,7 +410,7 @@
                             <li><a href="{{route('user.boster')}}">By Self Package </a></li>
                             <li><a href="{{route('user.bosterhistory')}}">By Self Package Report</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="flaticon-086-star"></i>
