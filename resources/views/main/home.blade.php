@@ -12,14 +12,13 @@
                         <div class="section-title">
                             <h3 class="wow fadeInUp">Pure Dairy Goodness</h3>
                             <h1 class="text-anime-style-3" data-cursor="-opaque">Welcome to Shwet Kranti Dairy – Pure Milk, Pure Trust</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Shwet Kranti Dairy mein hum aapke ghar tak 100% shuddh, taaza aur poshtik doodh pahunchate hain.
-                               Hamari dairy ka har ek product natural, chemical-free, aur farm-fresh hota hai.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">At Shwet Kranti Dairy, we bring you 100% pure, fresh, and nutritious milk straight from our healthy cows to your home.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <div class="hero-content-body">
                             <div class="hero-btn">
-                                <a href="contact.html" class="btn-default">get started</a>
+                                <a href="{{route('register')}}" class="btn-default">get started</a>
                             </div>
                             <!-- Trusted Clients Box Start -->
                             <div class="trusted-clients-box wow fadeInUp" data-wow-delay="0.2s">
@@ -76,7 +75,7 @@
 
                         <!-- Learn More Circle Start -->
                         <div class="learn-more-circle">
-                            <a href="about.html"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
+                            <a href="{{route('about-us')}}"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
                         </div>
                         <!-- Learn More Circle End -->
                     </div>
@@ -143,7 +142,7 @@
 
                             <!-- About Us Circle Start -->
                             <div class="about-us-circle">
-                                <a href="about.html"><img src="{{asset('')}}web-assets/images/about-us-circle.svg" alt=""></a>
+                                <a href="{{route('about-us')}}"><img src="{{asset('')}}web-assets/images/about-us-circle.svg" alt=""></a>
                             </div>
                             <!-- About Us Circle End -->
                         </div>
@@ -166,7 +165,7 @@
                         <div class="section-title">
                             <h3 class="wow fadeInUp">About us</h3>
                             <h2 class="text-anime-style-3" data-cursor="-opaque">Fresh milk straight from our pasture to your table</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">We're more than just a farm - we're your neighbors. We're proud to be part of the local community, providing families with wholesome dairy that's produced just down the road. Our cows are pasture-raised.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We’re more than just a dairy farm — we’re your neighbors.As a proud part of the local community, we provide families with pure, wholesome dairy products produced just down the road.Our cows are pasture-raised with care, ensuring natural, nutritious milk in every drop.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -220,7 +219,7 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.8s">
-                            <a href="about.html" class="btn-default">learn more about</a>
+                            <a href="{{route('about-us')}}" class="btn-default">learn more about</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -252,8 +251,8 @@
                         <!-- Services Item Start -->
                         <div class="services-item wow fadeInUp">
                             <div class="services-item-content">
-                                <h3><a href="service-single.html">Organic Dairy Farming</a></h3>
-                                <p>We raise our cows on certified organic pastures using sustainable and chemical-free practices to ensure pure, natural milk.</p>
+                                <h3><a href="#">Organic Dairy Farming</a></h3>
+                                <p>We raise our cows on certified organic pastures using sustainable, chemical-free practices to produce pure and natural milk for your family.</p>
                             </div>
                             <div class="icon-box">
                                 <img src="{{asset('')}}web-assets/images/icon-services-1.svg" alt="">
@@ -278,8 +277,8 @@
                         <!-- Services Item Start -->
                         <div class="services-item wow fadeInUp" data-wow-delay="0.2s">
                             <div class="services-item-content">
-                                <h3><a href="service-single.html">Home Delivery Services</a></h3>
-                                <p>Fresh milk and dairy products delivered straight from our farm to your doorstep, preserving freshness and convenience.</p>
+                                <h3><a href="#">Home Delivery Services</a></h3>
+                                <p>We deliver fresh milk and dairy products from our farm straight to your doorstep every morning—ensuring convenience, freshness, and reliability.</p>
                             </div>
                             <div class="icon-box">
                                 <img src="{{asset('')}}web-assets/images/icon-services-2.svg" alt="">
@@ -304,8 +303,8 @@
                         <!-- Services Item Start -->
                         <div class="services-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="services-item-content">
-                                <h3><a href="service-single.html">Grass-Fed Cow Management</a></h3>
-                                <p>Our cows are fed a 100% grass-based diet, promoting better animal health producing milk that's richer in nutrients and flavor.</p>
+                                <h3><a href="#">Grass-Fed Cow Management</a></h3>
+                                <p>Our cows follow a 100% grass-based diet, supporting their health and producing milk that is naturally richer in nutrients, taste, and quality.</p>
                             </div>
                             <div class="icon-box">
                                 <img src="{{asset('')}}web-assets/images/icon-services-3.svg" alt="">
@@ -327,7 +326,7 @@
                 <div class="col-lg-12">
                     <!-- Section Footer Text Start -->
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
-                        <p><span>Free</span>Let's make something great work together. <a href="contact.html">Get Free Quote</a></p>
+                        <p><span>Free</span>Let's make something great work together. <a href="{{route('contact')}}">Get Free Quote</a></p>
                     </div>
                     <!-- Section Footer Text End -->
                 </div>
@@ -363,7 +362,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Commitment to 100% Natural</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>We offer dairy products made from pure, natural milk with absolutely no preservatives or additives.</p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -380,7 +379,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Farm-Fresh Milk Every Day</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Enjoy fresh milk delivered daily from our farm, ensuring the highest level of purity and taste.</p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -397,7 +396,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Pure, Natural, No Chemicals</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Our milk is sourced from cows raised without chemicals, pesticides, or artificial growth boosters.</p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -428,7 +427,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Rigorous Quality Control</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Every batch of milk is tested for purity, hygiene, and freshness to guarantee the safest dairy for your family. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -445,7 +444,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Eco-Friendly Farming Practices</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>We follow sustainable and environment-friendly farming methods that protect nature and promote healthy dairy production </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -461,8 +460,8 @@
 
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
-                                <h3>Trusted By Thousands Daily</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <h3>Trusted by Thousands Daily</h3>
+                                <p>Families rely on us every day for fresh, wholesome milk they can trust for health, nutrition, and taste. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -508,7 +507,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Farm-Fresh Quality Guaranteed</h3>
-                                    <p>Our milk is sourced directly from our own farm, ensuring the freshest & highest quality.</p>
+                                    <p>Our milk comes directly from our own well-maintained dairy farm, ensuring unmatched freshness and exceptional quality in every drop.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -520,7 +519,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>100% Natural and Pure</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                    <p>We deliver naturally produced, chemical-free milk and dairy products to your doorstep every morning—fresh, pure, and full of nutrition</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -532,7 +531,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Eco-Friendly Packaging</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                    <p>We use safe, eco-friendly, and hygienic packaging to preserve purity while protecting the environment—making every delivery responsible and sustainable.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -585,7 +584,7 @@
 
                                 <!-- Quality Button Start -->
                                 <div class="quality-button wow fadeInUp" data-wow-delay="0.2s">
-                                    <a href="contact.html" class="btn-default">contact us</a>
+                                    <a href="{{route('contact')}}" class="btn-default">contact us</a>
                                 </div>
                                 <!-- Quality Button End -->
                             </div>
@@ -646,7 +645,7 @@
                             </div>
                             <div class="product-benefits-item-content">
                                 <h3>100% Organic Product</h3>
-                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                                <p>Pure, natural dairy sourced from chemical-free and pesticide-free farms—just the way nature intended.</p>
                             </div>
                         </div>
                         <!-- Product Benefits Item End -->
@@ -658,7 +657,7 @@
                             </div>
                             <div class="product-benefits-item-content">
                                 <h3>High Quality Milk</h3>
-                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                                <p>Fresh, nutritious milk produced under strict hygiene and safety standards to ensure unmatched purity and taste.</p>
                             </div>
                         </div>
                         <!-- Product Benefits Item End -->
@@ -670,7 +669,7 @@
                             </div>
                             <div class="product-benefits-item-content">
                                 <h3>Wide Assortment</h3>
-                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                                <p>From fresh milk to ghee, paneer, butter, and more—discover a complete range of wholesome dairy products.</p>
                             </div>
                         </div>
                         <!-- Product Benefits Item End -->
@@ -835,7 +834,7 @@
                         <div class="benefits-image-box-2">
                             <!-- Learn More Circle Start -->
                             <div class="learn-more-circle">
-                                <a href="about.html"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
+                                <a href="{{route('about-us')}}"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
                             </div>
                             <!-- Learn More Circle End -->
 
@@ -892,7 +891,7 @@
 
                         <!-- Benefits Button Start -->
                         <div class="benefits-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
+                            <a href="{{route('contact')}}" class="btn-default">Contact Us Today!</a>
                         </div>
                         <!-- Benefits Button End -->
                     </div>
@@ -1247,7 +1246,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>100% Pure & Fresh Milk</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>Fresh milk sourced directly from our healthy cows, ensuring natural purity and rich nutrition in every drop.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -1259,7 +1258,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>Farm-to-Table Freshness</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>We bring milk straight from our farm to your home without any middlemen, keeping the freshness and quality fully intact.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -1271,7 +1270,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>Organic & Chemical-Free</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>Our dairy products are crafted from naturally produced milk—completely free from chemicals, preservatives, and artificial additives.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -1379,7 +1378,7 @@
                 <div class="col-lg-6">
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="blog.html" class="btn-default">view all blogs</a>
+                        <a href="{{route('blog')}}" class="btn-default">view all blogs</a>
                     </div>
                     <!-- Section Button End -->
                 </div>
@@ -1391,7 +1390,7 @@
                     <div class="post-item wow fadeInUp">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="{{route('blog')}}" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-1.jpg" alt="">
                                 </figure>
@@ -1403,13 +1402,13 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">The Role of Biodiversity in Sustainable Dairy Farming</a></h2>
+                                <h2><a href="{{route('blog')}}">The Role of Biodiversity in Sustainable Dairy Farming</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                                <a href="{{route('about-us')}}" class="readmore-btn">Read More</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1423,7 +1422,7 @@
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="{{route('blog')}}" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="{{asset('')}}web-assets/images/post-2.jpg" alt="">
                                 </figure>
@@ -1435,7 +1434,7 @@
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</a></h2>
+                                <h2><a href="{{route('blog')}}">Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</a></h2>
                             </div>
                             <!-- Post Item Content End -->
 

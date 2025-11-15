@@ -12,7 +12,7 @@
 						<h1 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;"><div class="split-line" style="display: block; text-align: center; position: relative;"><div style="position:relative;display:inline-block;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">O</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">u</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">r</div></div> <div style="position:relative;display:inline-block;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">s</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">e</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">r</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">v</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">i</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">c</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">e</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">s</div></div></div></h1>
 						<nav class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('Index')}}">home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Our services</li>
                             </ol>
                         </nav>
@@ -71,7 +71,7 @@
                     <div class="services-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Organic Dairy Farming</a></h3>
-                            <p>We raise our cows on certified organic pastures using sustainable and chemical-free practices to ensure pure, natural milk.</p>
+                            <p>We raise our cows on certified organic pastures using sustainable, chemical-free practices to produce pure and natural milk for your family.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-1.svg" alt="">
@@ -85,7 +85,7 @@
                     <div class="services-item wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Home Delivery Services</a></h3>
-                            <p>Fresh milk and dairy products delivered straight from our farm to your doorstep, preserving freshness and convenience.</p>
+                            <p>We deliver fresh milk and dairy products from our farm straight to your doorstep every morning—ensuring convenience, freshness, and reliability.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-2.svg" alt="">
@@ -99,7 +99,7 @@
                     <div class="services-item wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Grass-Fed Cow Management</a></h3>
-                            <p>Our cows are fed a 100% grass-based diet, promoting better animal health producing milk that's richer in nutrients and flavor.</p>
+                            <p>Our cows follow a 100% grass-based diet, supporting their health and producing milk that is naturally richer in nutrients, taste, and quality.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-3.svg" alt="">
@@ -113,7 +113,7 @@
                     <div class="services-item wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Cold Chain Logistics</a></h3>
-                            <p>We raise our cows on certified organic pastures using sustainable and chemical-free practices to ensure pure, natural milk.</p>
+                            <p>We maintain a fully controlled cold-chain system so that every drop of milk stays fresh, safe, and nutritious from farm to home.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-4.svg" alt="">
@@ -127,7 +127,7 @@
                     <div class="services-item wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Farm Hygiene Monitoring</a></h3>
-                            <p>Fresh milk and dairy products delivered straight from our farm to your doorstep, preserving freshness and convenience.</p>
+                            <p>Our dairy farm follows strict hygiene and cleanliness standards, ensuring that our cows, equipment, and environment meet premium safety and quality levels.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-5.svg" alt="">
@@ -141,7 +141,7 @@
                     <div class="services-item wow fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
                         <div class="services-item-content">
                             <h3><a href="service-single.html">Fresh Milk Packaging</a></h3>
-                            <p>Our cows are fed a 100% grass-based diet promoting better animal health producing milk that's richer in nutrients &amp; flavor.</p>
+                            <p>We use modern, food-grade packaging methods to preserve the natural freshness, purity, and taste of our milk without any contamination.</p>
                         </div>
                         <div class="icon-box">
                             <img src="{{asset('')}}web-assets/images/icon-services-6.svg" alt="">
@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Farm-Fresh Quality Guaranteed</h3>
-                                    <p>Our milk is sourced directly from our own farm, ensuring the freshest &amp; highest quality.</p>
+                                    <p>Our milk comes directly from our own well-maintained dairy farm, ensuring unmatched freshness and exceptional quality in every drop.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -199,7 +199,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>100% Natural and Pure</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                    <p>We deliver naturally produced, chemical-free milk and dairy products to your doorstep every morning—fresh, pure, and full of nutrition.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Eco-Friendly Packaging</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                    <p>We use safe, eco-friendly, and hygienic packaging to preserve purity while protecting the environment—making every delivery responsible and sustainable.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->

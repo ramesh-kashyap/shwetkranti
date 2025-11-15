@@ -12,7 +12,7 @@
 						<h1 class="text-anime-style-3" data-cursor="-opaque" style="perspective: 400px;"><div class="split-line" style="display: block; text-align: center; position: relative;"><div style="position:relative;display:inline-block;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">O</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">u</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">r</div></div> <div style="position:relative;display:inline-block;"><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">b</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">l</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">o</div><div style="position: relative; display: inline-block; transform: translate(0px, 0px); opacity: 1;">g</div></div></div></h1>
 						<nav class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('Index')}}">home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Our blog</li>
                             </ol>
                         </nav>
