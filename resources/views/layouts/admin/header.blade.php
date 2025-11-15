@@ -230,12 +230,12 @@ display: none;
 							<span class="nav-text">Profit Summary</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="{{ route('admin.sponsor_direct')}}">Direct Sponsor Level Income</a></li>
-                             <li><a href="{{ route('admin.direct_Income')}}">Direct Sponsor Income </a></li>
+                            <li><a href="{{ route('admin.sponsor_direct')}}">CBR Income</a></li>
+                             <li><a href="{{ route('admin.direct_Income')}}">Fast Track Income </a></li>
 
-                            <li><a href="{{ route('admin.ocean_income')}}">Ocean  Vip Income </a></li>
-                            <li><a href="{{route('admin.Self_Income')}}">Self Income </a></li>
-                                <li><a href="{{route('admin.Bonanza_income')}}">Team Bonanza </a></li>
+                            <li><a href="{{ route('admin.ocean_income')}}">Referral Income </a></li>
+                            <li><a href="{{route('admin.Self_Income')}}">Reward Income </a></li>
+                                <li><a href="{{route('admin.Bonanza_income')}}">Royalty Income </a></li>
 
                             
                            
