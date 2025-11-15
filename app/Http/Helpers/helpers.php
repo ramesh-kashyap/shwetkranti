@@ -265,7 +265,7 @@ function verificationCode($length)
 
 
 
-  function add_leadership_income($id,$amt)
+  function add_direct_income($id,$amt)
   {
 
     //$user_id =$this->session->userdata('user_id_session')
@@ -304,15 +304,39 @@ $data = User::where('id',$id)->orderBy('id','desc')->first();
                  {  
                    if($cnt===1 )
                     {
-                      $pp= $amount*5;
+                      $pp= $amount*20;
           
                     } if($cnt==2)
                     {
+                      $pp= $amount*10;
+          
+                    } 
+                    if($cnt==3)
+                    {
+                      $pp= $amount*5;
+          
+                    }
+
+                     if($cnt>=4 && $cnt<=10)
+                    {
                       $pp= $amount*2;
           
-                    } if($cnt==3)
+                      
+                    }
+
+                       if($cnt>=11 && $cnt<=15)
                     {
                       $pp= $amount*1;
+          
+                    }
+                       if($cnt>=16 && $cnt<=20)
+                    {
+                      $pp= $amount*0.5;
+          
+                    }
+                       if($cnt>=21 && $cnt<=50)
+                    {
+                      $pp= $amount*0.25;
           
                     }
                   }
@@ -337,7 +361,7 @@ $data = User::where('id',$id)->orderBy('id','desc')->first();
              
                
                 $user_id_fk=$sponsor;
-                if($spid>0 && $cnt<=3){
+                if($spid>0 && $cnt<=50){
                   if($pp>0){
                    
                    $data = [
@@ -345,7 +369,7 @@ $data = User::where('id',$id)->orderBy('id','desc')->first();
                   'user_id_fk' =>$Sposnor_status->username,
                   'amt' => $amt,
                   'comm' => $pp,
-                  'remarks' =>'Leadership Bonus',
+                  'remarks' =>'Referral Income',
                   'level' => $cnt,
                   'rname' => $rname,
                   'fullname' => $fullname,
@@ -366,7 +390,7 @@ return true;
 
 
 
-function add_direct_income($id,$amt)
+function add_leadership_income ($id,$amt)
 {
 
   //$user_id =$this->session->userdata('user_id_session')

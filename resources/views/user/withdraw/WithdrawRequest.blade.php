@@ -29,7 +29,7 @@
                                         <div class="row">
                                             <div class="mb-3 col-md-12">
                                                 <label class="form-label">Enter Amount</label>
-                                                <input class="form-control" placeholder="Enter Amount" id="" min="5" required type="number" name="amount"
+                                                <input class="form-control" placeholder="Enter Amount" id="" min="1000" required type="number" name="amount"
                                                     value="" >
                                             </div>
 
