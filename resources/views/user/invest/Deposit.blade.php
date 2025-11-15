@@ -22,7 +22,7 @@
                           <div class="card-body">
                               <div class="basic-form">
                                 
-                                  <form action="{{ route('user.confirmDeposits') }}" method="POST" enctype="multipart/form-data">
+                                  <form action="{{ route('user.confirmDeposit') }}" method="POST" enctype="multipart/form-data">
                                    {{ csrf_field() }}
 
                               <!-- <h5>  Total Fund Balance {{ currency() }}{{ number_format(Auth::user()->fund_balance(), 2) }}</h5> -->
@@ -32,7 +32,7 @@
                                             
                                            
                                               
-                                               <input class="form-control"  type="number"    placeholder=""  name="amount"
+                                               <input class="form-control"  type="number"     placeholder=" Enter Amount"  name="amount"
                                                   value="" >
                                                   
                                           </div>
@@ -56,12 +56,7 @@
                                       </div>
    
                                       <div class="mb-3">
-                                          <div class="form-check">
-                                              <input class="form-check-input" required type="checkbox">
-                                              <label class="form-check-label">
-                                                  Check me out
-                                              </label>
-                                          </div>
+                                         
                                       </div>
                                       <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                                   </form>

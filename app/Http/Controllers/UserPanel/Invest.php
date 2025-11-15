@@ -567,7 +567,7 @@ $rand = rand(1000, 9999999);
 
 
 
-public function confirmDeposits(Request $request)
+public function confirmDeposit(Request $request)
 {
     try {
         // ✅ Validation
@@ -641,7 +641,7 @@ public function confirmDeposits(Request $request)
         ->first();
 
       // âœ… Latest investment check
-      $invest_check = BuyFund::where('user_id', $user_detail->id)
+      $invest_check = Investment::where('user_id', $user_detail->id)
         ->where('status', '!=', 'Decline')
         ->orderBy('id', 'desc')
         ->first();
@@ -661,18 +661,17 @@ public function confirmDeposits(Request $request)
 
       // âœ… Store in DB
       $data = [
-        'utrno'         => $request->utrno,
+        'transaction_id'         => $request->utrno,
         'user_id'       => $user_detail->id,
         'user_id_fk'    => $user_detail->username,
         'amount'        => $request->amount,
-        'type'          => $request->paymentMode,
         'status'        => 'Pending',
-        // 'payment_mode'  => $request->paymentMode, 
+        'payment_mode'  => $request->paymentMode, 
         'slip'          => $imageName,
         'sdate'         => date("Y-m-d"),
       ];
 
-      BuyFund::insert($data);
+      Investment::insert($data);
 
       // âœ… Success message
       $notify[] = ['success', 'Your fund request has been submitted successfully'];
