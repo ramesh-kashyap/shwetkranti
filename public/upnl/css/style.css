@@ -340,7 +340,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #39251a;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2831,8 +2831,9 @@ textarea.form-control {
 }
 
 .form-check-input:checked {
-  background-color: #5bcfc5;
-  border-color: #5bcfc5;
+  background-color: #fed525;
+
+  border-color: #ffffff;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -12474,7 +12475,7 @@ a.active {
 }
 
 .text-primary {
-  color: var(--primary) !important;
+  color: #fed525 !important;
 }
 
 .fs-12 {
@@ -12755,7 +12756,7 @@ a.active {
 
 .vh-100 {
   height: 100vh !important;
-  background: url('../images/TagLogo.webp');
+ 
   background-repeat: repeat;
   background-position: unset;
   background-size: cover;
@@ -40466,7 +40467,7 @@ table.dataTable.display tbody td {
 }
 
 .authincation {
-  background: var(--rgba-primary-1);
+  background: rgb(57 37 26);
   display: flex;
   min-height: 100vh;
 }

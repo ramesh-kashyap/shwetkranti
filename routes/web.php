@@ -57,8 +57,8 @@ Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])-
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about_us'])->name('about-us');
 Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
-Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
-Route::get('/support', [App\Http\Controllers\FrontController::class, 'support'])->name('support');
+Route::get('/blog', [App\Http\Controllers\FrontController::class, 'blog'])->name('blog');
+Route::get('/contact', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact');
 
 
 Route::get('/home', [App\Http\Controllers\UserPanel\Dashboard::class, 'index'])->name('home');
