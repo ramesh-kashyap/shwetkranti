@@ -195,11 +195,11 @@ Route::group(['middleware' => ['admin']], function ()
 //end fundController
 
 //bonusController
-Route::get('sponsor_direct', [App\Http\Controllers\Admin\BonusController::class, 'roi_bonus'])->name('admin.sponsor_direct');
-Route::get('ocean_income', [App\Http\Controllers\Admin\BonusController::class, 'level_bonus'])->name('admin.ocean_income');
-Route::get('Self_Income', [App\Http\Controllers\Admin\BonusController::class, 'sponsor_bonus'])->name('admin.Self_Income');
-Route::get('direct_Income', [App\Http\Controllers\Admin\BonusController::class, 'reward_bonus'])->name('admin.direct_Income');
-Route::get('Bonanza_income', [App\Http\Controllers\Admin\BonusController::class, 'Bonanza_income'])->name('admin.Bonanza_income');
+Route::get('cbr_income', [App\Http\Controllers\Admin\BonusController::class, 'roi_bonus'])->name('admin.sponsor_direct');
+Route::get('referral_income', [App\Http\Controllers\Admin\BonusController::class, 'level_bonus'])->name('admin.ocean_income');
+Route::get('reward_Income', [App\Http\Controllers\Admin\BonusController::class, 'sponsor_bonus'])->name('admin.Self_Income');
+Route::get('fast_track_income', [App\Http\Controllers\Admin\BonusController::class, 'reward_bonus'])->name('admin.direct_Income');
+Route::get('royalty_income', [App\Http\Controllers\Admin\BonusController::class, 'Bonanza_income'])->name('admin.Bonanza_income');
 
 
 

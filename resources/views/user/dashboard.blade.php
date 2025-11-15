@@ -1,95 +1,94 @@
-
-		<!--**********************************
+<!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body">
-            <!-- row -->
-			<style>
-				.invoice-card-row .invoice-card .invoice-num {
-					font-size: 21px;
-					margin-bottom: 5px;
-				}
-				@media only screen and (max-width: 1600px)
-				{
-					.invoice-card-row .invoice-card .invoice-num {
-						font-size: 27px;
-					}
-					.invoice-card-row .invoice-card .card-body .fs-18 {
-						font-size: 18px !important;
-						font-weight: bolder;
-						text-shadow: 0.5px 0.5px black;
-					}
-				}
-				
-				
+<div class="content-body">
+	<!-- row -->
+	<style>
+		.invoice-card-row .invoice-card .invoice-num {
+			font-size: 21px;
+			margin-bottom: 5px;
+		}
 
-			</style>
-			<div class="container-fluid">
-				<div class="row invoice-card-row">
-				    
-				    
-			
-				    
-				    
-				    
-				    
-				    
-					<div class="col-xl-4 col-xxl-4 col-sm-6">
-						<div class="card bg-warning invoice-card">
-							<div class="card-body d-flex">
-								<div class="icon me-3">
-									<svg  width="33px" height="32px">
-									<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-									 d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z"/>
-									</svg>
-									
-								</div>
-								<div>
-									<h2 class="text-white invoice-num">{{ currency() }} {{ number_format((Auth::user()->available_balance()>=0)?Auth::user()->available_balance():0, 2) }}</h2>
-									<span class="text-white fs-18">Main Balance</span>
-								</div>
-							</div>
+		@media only screen and (max-width: 1600px) {
+			.invoice-card-row .invoice-card .invoice-num {
+				font-size: 27px;
+			}
+
+			.invoice-card-row .invoice-card .card-body .fs-18 {
+				font-size: 18px !important;
+				font-weight: bolder;
+				text-shadow: 0.5px 0.5px black;
+			}
+		}
+	</style>
+	<div class="container-fluid">
+		<div class="row invoice-card-row">
+
+
+
+
+
+
+
+
+			<div class="col-xl-4 col-xxl-4 col-sm-6">
+				<div class="card bg-warning invoice-card">
+					<div class="card-body d-flex">
+						<div class="icon me-3">
+							<svg width="33px" height="32px">
+								<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+									d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z" />
+							</svg>
+
+						</div>
+						<div>
+							<h2 class="text-white invoice-num">{{ currency() }} {{ number_format((Auth::user()->available_balance()>=0)?Auth::user()->available_balance():0, 2) }}</h2>
+							<span class="text-white fs-18">Main Balance</span>
 						</div>
 					</div>
-					
-					<div class="col-xl-4 col-xxl-4 col-sm-6">
-						<div class="card bg-info invoice-card">
-							<div class="card-body d-flex">
-								<div class="icon me-3">
-									<svg  width="33px" height="32px">
-									<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-									 d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z"/>
-									</svg>
-								
-								</div>
-								<div>
-									<h2 class="text-white invoice-num">
-                                        {{ currency() }} {{ number_format(Auth::user()->boster_balance(), 2) }}  </h2>
-									<span class="text-white fs-18">Self Wallet</span>
-								</div>
-							</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-xxl-4 col-sm-6">
+				<div class="card bg-info invoice-card">
+					<div class="card-body d-flex">
+						<div class="icon me-3">
+							<svg width="33px" height="32px">
+								<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+									d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z" />
+							</svg>
+
 						</div>
-					</div>	
-					
-					<div class="col-xl-4 col-xxl-4 col-sm-6">
-						<div class="card bg-secondary invoice-card">
-							<div class="card-body d-flex">
-								<div class="icon me-3">
-									<svg  width="33px" height="32px">
-									<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-									 d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z"/>
-									</svg>
-								
-								</div>
-								<div>
-									<h2 class="text-white invoice-num">
-                                        {{ currency() }} {{ number_format(Auth::user()->roi_bonus->sum('comm'), 2) }}  </h2>
-									<span class="text-white fs-18">Self Income</span>
-								</div>
-							</div>
+						<div>
+							<h2 class="text-white invoice-num">
+								{{ currency() }} {{ number_format(Auth::user()->boster_balance(), 2) }}
+							</h2>
+							<span class="text-white fs-18">Self Wallet</span>
 						</div>
 					</div>
-    
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-xxl-4 col-sm-6">
+				<div class="card bg-secondary invoice-card">
+					<div class="card-body d-flex">
+						<div class="icon me-3">
+							<svg width="33px" height="32px">
+								<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+									d="M31.963,30.931 C31.818,31.160 31.609,31.342 31.363,31.455 C31.175,31.538 30.972,31.582 30.767,31.583 C30.429,31.583 30.102,31.463 29.845,31.243 L25.802,27.786 L21.758,31.243 C21.502,31.463 21.175,31.583 20.837,31.583 C20.498,31.583 20.172,31.463 19.915,31.243 L15.872,27.786 L11.829,31.243 C11.622,31.420 11.370,31.534 11.101,31.572 C10.832,31.609 10.558,31.569 10.311,31.455 C10.065,31.342 9.857,31.160 9.710,30.931 C9.565,30.703 9.488,30.437 9.488,30.167 L9.488,17.416 L2.395,17.416 C2.019,17.416 1.658,17.267 1.392,17.001 C1.126,16.736 0.976,16.375 0.976,16.000 L0.976,6.083 C0.976,4.580 1.574,3.139 2.639,2.076 C3.703,1.014 5.146,0.417 6.651,0.417 L26.511,0.417 C28.016,0.417 29.459,1.014 30.524,2.076 C31.588,3.139 32.186,4.580 32.186,6.083 L32.186,30.167 C32.186,30.437 32.109,30.703 31.963,30.931 ZM9.488,6.083 C9.488,5.332 9.189,4.611 8.657,4.080 C8.125,3.548 7.403,3.250 6.651,3.250 C5.898,3.250 5.177,3.548 4.645,4.080 C4.113,4.611 3.814,5.332 3.814,6.083 L3.814,14.583 L9.488,14.583 L9.488,6.083 ZM29.348,6.083 C29.348,5.332 29.050,4.611 28.517,4.080 C27.985,3.548 27.263,3.250 26.511,3.250 L11.559,3.250 C12.059,4.111 12.324,5.088 12.325,6.083 L12.325,27.092 L14.950,24.840 C15.207,24.620 15.534,24.500 15.872,24.500 C16.210,24.500 16.537,24.620 16.794,24.840 L20.837,28.296 L24.880,24.840 C25.137,24.620 25.463,24.500 25.802,24.500 C26.140,24.500 26.467,24.620 26.724,24.840 L29.348,27.092 L29.348,6.083 ZM25.092,20.250 L16.581,20.250 C16.205,20.250 15.844,20.101 15.578,19.835 C15.312,19.569 15.162,19.209 15.162,18.833 C15.162,18.457 15.312,18.097 15.578,17.831 C15.844,17.566 16.205,17.416 16.581,17.416 L25.092,17.416 C25.469,17.416 25.829,17.566 26.096,17.831 C26.362,18.097 26.511,18.457 26.511,18.833 C26.511,19.209 26.362,19.569 26.096,19.835 C25.829,20.101 25.469,20.250 25.092,20.250 ZM25.092,14.583 L16.581,14.583 C16.205,14.583 15.844,14.434 15.578,14.168 C15.312,13.903 15.162,13.542 15.162,13.167 C15.162,12.791 15.312,12.430 15.578,12.165 C15.844,11.899 16.205,11.750 16.581,11.750 L25.092,11.750 C25.469,11.750 25.829,11.899 26.096,12.165 C26.362,12.430 26.511,12.791 26.511,13.167 C26.511,13.542 26.362,13.903 26.096,14.168 C25.829,14.434 25.469,14.583 25.092,14.583 ZM25.092,8.916 L16.581,8.916 C16.205,8.916 15.844,8.767 15.578,8.501 C15.312,8.236 15.162,7.875 15.162,7.500 C15.162,7.124 15.312,6.764 15.578,6.498 C15.844,6.232 16.205,6.083 16.581,6.083 L25.092,6.083 C25.469,6.083 25.829,6.232 26.096,6.498 C26.362,6.764 26.511,7.124 26.511,7.500 C26.511,7.875 26.362,8.236 26.096,8.501 C25.829,8.767 25.469,8.916 25.092,8.916 Z" />
+							</svg>
+
+						</div>
+						<div>
+							<h2 class="text-white invoice-num">
+								{{ currency() }} {{ number_format(Auth::user()->roi_bonus->sum('comm'), 2) }}
+							</h2>
+							<span class="text-white fs-18">Self Income</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
 
 					
 					
@@ -153,117 +152,120 @@
 			
 		</div>
 
-			   <div class="row">
-					<div class="col-xl-5 col-lg-12 col-sm-12">
-                        <div class="card">
-                            <div class="card-header border-0 pb-0">
-                                <h2 class="card-title">about me </h2>
-                            </div>
+		<div class="row">
+			<div class="col-xl-5 col-lg-12 col-sm-12">
+				<div class="card">
+					<div class="card-header border-0 pb-0">
+						<h2 class="card-title">about me </h2>
+					</div>
 
-                            <div class="card-body pb-0">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex px-0 justify-content-between">
-                                        <strong>Referral ID</strong> <span class="mb-0">{{(Auth::user()->sponsor_detail)?Auth::user()->sponsor_detail->username:"0"}}</span>
-                                    </li>
-                                    <li class="list-group-item d-flex px-0 justify-content-between">
-                                        <strong>Total Deposit</strong> <span class="mb-0">  {{ currency() }} {{number_format(Auth::user()->investment->sum('amount'),2)}}   
-                                    </li>
-                                    <!-- <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Current
+					<div class="card-body pb-0">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item d-flex px-0 justify-content-between">
+								<strong>Referral ID</strong> <span class="mb-0">{{(Auth::user()->sponsor_detail)?Auth::user()->sponsor_detail->username:"0"}}</span>
+							</li>
+							<li class="list-group-item d-flex px-0 justify-content-between">
+								<strong>Total Deposit</strong> <span class="mb-0"> {{ currency() }} {{number_format(Auth::user()->investment->sum('amount'),2)}}
+							</li>
+							<!-- <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Current
                                             Package</strong> <span class="mb-0"> {{number_format(Auth::user()->package,2)}}   <span style="font-size:12px">{{ currency() }}</span> </li> -->
 
-                                            
-                                  
-                                    <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Direct
-                                            User</strong> <span class="mb-0">{{$user_direct}}</span> </li>
-                                    <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Total
-                                            Team</strong> <span class="mb-0">{{$total_team}}</span> </li>
-                                    <!-- <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Team
+
+
+							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Direct
+									User</strong> <span class="mb-0">{{$user_direct}}</span> </li>
+							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Total
+									Team</strong> <span class="mb-0">{{$total_team}}</span> </li>
+							<!-- <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Team
                                              Business</strong> <span class="mb-0">  {{number_format($team_business,2)}}   <span style="font-size:12px">{{ currency() }}</span> </li> -->
-                                    
-                                    <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
-                                            Joining</strong> <span class="mb-0">{{ date('D, d M Y h:i:s a', strtotime(Auth::user()->created_at)) }}</span> </li>
-                                    <li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
-                                            Topup</strong> <span class="mb-0"> {{ Auth::user()->adate ? date('D, d M Y h:i:s a', strtotime(Auth::user()->adate)) : '' }}</span> </li>
-                                            
-                                              
-                              <li class="list-group-item d-flex px-0 justify-content-between">
-                                <strong>Team Business 1 Line</strong>
-                                <span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamA, 2) }}</span>
-                              </li>
-                               
-                              <li class="list-group-item d-flex px-0 justify-content-between">
-                                <strong>Team Business 2 Line</strong>
-                                <span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamB, 2) }}</span>
-                              </li>
-                              
-                                
-                              <li class="list-group-item d-flex px-0 justify-content-between">
-                                <strong>Team Business 3 Line</strong>
-                                <span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->other_team, 2) }}</span>
-                              </li>
-                              
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-xl-5 col-xxl-6 col-lg-6 col-sm-6">
-                        <div class="widget-stat card">
-                            <div class="card-body p-4">
-                                <div class="media ai-icon" style="overflow-x: auto;">
-                                   
-                                    <div class="media-body">
-                                        <p class="mb-1">Referral Link</p>
-                                        <input type="text" value="{{ asset('') }}register?ref={{ Auth::user()->username }}" id="myInput"
-                                        hidden>
-                                        <h4 class="mb-0">{{ asset('') }}register?ref={{ Auth::user()->username }}</h4>
-                                        <br> <br>
-                                        
-                                        <button type="button" onclick="myFunction()" class="btn btn-warning"> <i class="fa fa-copy" style="font-size:18px"></i> Copy </button>
-                                        <a href="whatsapp://send?text={{ asset('') }}register?ref={{ Auth::user()->username }}" class="btn btn-success"><i style="font-size:18px;color:#fff" class="fa fa-whatsapp" aria-hidden="true"></i> Share on whatsApp </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-						
-                    </div>
+							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
+									Joining</strong> <span class="mb-0">{{ date('D, d M Y h:i:s a', strtotime(Auth::user()->created_at)) }}</span> </li>
+							<li class="list-group-item d-flex px-0 justify-content-between"> <strong>Date of
+									Topup</strong> <span class="mb-0"> {{ Auth::user()->adate ? date('D, d M Y h:i:s a', strtotime(Auth::user()->adate)) : '' }}</span> </li>
+
+
+							<li class="list-group-item d-flex px-0 justify-content-between">
+								<strong>Team Business 1 Line</strong>
+								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamA, 2) }}</span>
+							</li>
+
+							<li class="list-group-item d-flex px-0 justify-content-between">
+								<strong>Team Business 2 Line</strong>
+								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->teamB, 2) }}</span>
+							</li>
+
+
+							<li class="list-group-item d-flex px-0 justify-content-between">
+								<strong>Team Business 3 Line</strong>
+								<span class="mb-0">{{ currency() }} {{ number_format(Auth::user()->other_team, 2) }}</span>
+							</li>
+
+						</ul>
+					</div>
 				</div>
-				    
-				    
+			</div>
+			<div class="col-xl-5 col-xxl-6 col-lg-6 col-sm-6">
+				<div class="widget-stat card">
+					<div class="card-body p-4">
+						<div class="media ai-icon" style="overflow-x: auto;">
 
-			
-            </div>
-        </div>
-        <!--**********************************
+							<div class="media-body">
+								<p class="mb-1">Referral Link</p>
+								<input type="text" value="{{ asset('') }}register?ref={{ Auth::user()->username }}" id="myInput"
+									hidden>
+								<h4 class="mb-0">{{ asset('') }}register?ref={{ Auth::user()->username }}</h4>
+								<br> <br>
+
+								<button type="button" onclick="myFunction()" class="btn btn-warning"> <i class="fa fa-copy" style="font-size:18px"></i> Copy </button>
+								<a href="whatsapp://send?text={{ asset('') }}register?ref={{ Auth::user()->username }}" class="btn btn-success"><i style="font-size:18px;color:#fff" class="fa fa-whatsapp" aria-hidden="true"></i> Share on whatsApp </a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+<!--**********************************
             Content body end
         ***********************************-->
-		<script>
-function myFunction() {
-  const input = document.getElementById('myInput');
-  const text = input ? input.value : '';
+<script>
+	function myFunction() {
+		const input = document.getElementById('myInput');
+		const text = input ? input.value : '';
 
-  if (!text) return;
+		if (!text) return;
 
-  // Modern API
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(text).then(() => {
-      alert('Referral link copied!');
-    }).catch(() => fallbackCopy(text));
-  } else {
-    fallbackCopy(text);
-  }
+		// Modern API
+		if (navigator.clipboard && window.isSecureContext) {
+			navigator.clipboard.writeText(text).then(() => {
+				alert('Referral link copied!');
+			}).catch(() => fallbackCopy(text));
+		} else {
+			fallbackCopy(text);
+		}
 
-  function fallbackCopy(t) {
-    const ta = document.createElement('textarea');
-    ta.value = t;
-    ta.style.position = 'fixed';
-    ta.style.left = '-9999px';
-    document.body.appendChild(ta);
-    ta.select();
-    try { document.execCommand('copy'); alert('Referral link copied!'); }
-    catch (e) { alert('Copy failed. Please copy manually.'); }
-    document.body.removeChild(ta);
-  }
-}
+		function fallbackCopy(t) {
+			const ta = document.createElement('textarea');
+			ta.value = t;
+			ta.style.position = 'fixed';
+			ta.style.left = '-9999px';
+			document.body.appendChild(ta);
+			ta.select();
+			try {
+				document.execCommand('copy');
+				alert('Referral link copied!');
+			} catch (e) {
+				alert('Copy failed. Please copy manually.');
+			}
+			document.body.removeChild(ta);
+		}
+	}
 </script>
-		

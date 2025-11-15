@@ -140,8 +140,8 @@
 								<div class="card">
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
-											<span class="font-w500 fs-16 d-block mb-2"> Self Income</span>
-											<h2>{{  number_format((\App\Models\Income::where('remarks','Self Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
+											<span class="font-w500 fs-16 d-block mb-2"> CBR Income</span>
+											<h2>{{  number_format((\App\Models\Income::where('remarks','CBR Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 											
@@ -155,8 +155,8 @@
 								<div class="card">
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
-											<span class="font-w500 fs-16 d-block mb-2">Ocean Vip Income </span>
-											<h2>{{  number_format((\App\Models\Income::where('remarks','Ocean Vip Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
+											<span class="font-w500 fs-16 d-block mb-2">Fast Track Income </span>
+											<h2>{{  number_format((\App\Models\Income::where('remarks','Fast Track Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 										
@@ -172,8 +172,8 @@
 								<div class="card">
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
-											<span class="font-w500 fs-16 d-block mb-2">Direct Sponsor Level Income </span>
-											<h2>{{  number_format((\App\Models\Income::where('remarks','Direct Sponsor Level Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
+											<span class="font-w500 fs-16 d-block mb-2">Referral Income </span>
+											<h2>{{  number_format((\App\Models\Income::where('remarks','Referral Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 										
@@ -187,8 +187,8 @@
 								<div class="card">
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
-											<span class="font-w500 fs-16 d-block mb-2">Direct Sponsor Income </span>
-											<h2>{{  number_format((\App\Models\Income::where('remarks','Direct Sponsor Income ')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
+											<span class="font-w500 fs-16 d-block mb-2">Reward Income </span>
+											<h2>{{  number_format((\App\Models\Income::where('remarks','Reward Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 										
@@ -202,8 +202,8 @@
 								<div class="card">
 									<div class="card-body d-flex align-items-center justify-content-between">
 										<div class="menu">
-											<span class="font-w500 fs-16 d-block mb-2">Team Bonanza </span>
-											<h2>{{  number_format((\App\Models\Income::where('remarks','Team Bonanza')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
+											<span class="font-w500 fs-16 d-block mb-2">Royalty Income </span>
+											<h2>{{  number_format((\App\Models\Income::where('remarks','Royalty Income')->sum('comm')),2)   }} <span style="font-size:17px">{{ currency() }} </span></h2>
 										</div>	
 										<div class="d-inline-block position-relative donut-chart-sale">
 										
