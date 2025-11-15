@@ -176,6 +176,7 @@ class Profile extends Controller
                 'branch_name' => 'required',
                 'ifsc_code' => 'required',
                 'account_number' => 'required',
+                'pancard_no' => 'required',
 
             ]);
             if($validation->fails()) {
@@ -193,7 +194,7 @@ class Profile extends Controller
                  'bank_name'=>$request->bank_name,
                  'account_holder'=>$request->account_holder,
                  'branch_name'=>$request->branch_name,
-                //  'pancard_no'=>$request->pancard_no,
+                 'pancard_no'=>$request->pancard_no,
                  'account_no'=>$request->account_number,
                  'ifsc_code'=>$request->ifsc_code,
              );

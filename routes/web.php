@@ -114,12 +114,12 @@ Route::get('/level-team', [App\Http\Controllers\UserPanel\Team::class, 'LevelTea
 //end team
 
 //bonus
-Route::get('/ocenan_income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.ocenan_income');
-Route::get('/Self_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_income'])->name('user.Self_income');
+Route::get('/fast_track_income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.ocenan_income');
+Route::get('/cbr_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_income'])->name('user.Self_income');
 Route::get('/reward-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'reward_income'])->name('user.reward-bonus');
-Route::get('/team_bonanza', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.team_bonanza');
-Route::get('/Direct_Sponsor_Income', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_bonus'])->name('user.Direct_Sponsor_Income');
-Route::get('/direct_sponor_level', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_sponor_level'])->name('user.direct_sponor_level');
+Route::get('/royalty_income', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.team_bonanza');
+Route::get('/referral_Income', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_bonus'])->name('user.Direct_Sponsor_Income');
+Route::get('/reward_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_sponor_level'])->name('user.direct_sponor_level');
 
 //end bonus
 
