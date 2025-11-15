@@ -210,7 +210,7 @@ display: none;
 
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <!-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-045-heart"></i>
 							<span class="nav-text">Fund Management</span>
 						</a>
@@ -219,7 +219,7 @@ display: none;
                             <li><a href="{{route('admin.fund-report')}}">Fund Report</a></li>
                           
                         </ul>
-                    </li>
+                    </li> -->
                     {{-- <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-013-checkmark"></i>
 							<span class="nav-text">Profit Summery</span>
