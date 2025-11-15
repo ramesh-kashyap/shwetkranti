@@ -22,14 +22,14 @@ class FrontController extends Controller
     {
         return view('main.service');
     }
-    public function faq()
+    public function blog()
     {
-        return view('main.faq');
+        return view('main.blog');
     }
 
-    public function support()
+    public function contact()
     {
-        return view('main.support');
+        return view('main.contact');
     }
     
     

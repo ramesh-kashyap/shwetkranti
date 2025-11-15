@@ -1,87 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-<!-- Mirrored from themazine.com/html/Gfx Trade/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Apr 2022 13:08:00 GMT -->
+
+<html lang="zxx">
+
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="icon" href="{{asset('')}}mainsite/images/fav-icon/icon.png" type="image/x-icon" />
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>{{siteName()}} | Trading Platform</title>
-
-        <!-- Icon css link -->
-         
-        
-        <link href="{{asset('')}}mainsite/css/style.css" rel="stylesheet"> 
-        <link href="{{asset('')}}mainsite/css/responsive.css" rel="stylesheet"> 
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-   <style>
-	#mega-menu-wrapper {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    min-height: auto;
-    text-align: right;
-    margin-top: 39px;
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Milkzen - Dairy Farm & Milk HTML Template</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('')}}web-assets/images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="{{asset('')}}web-assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="{{asset('')}}web-assets/css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="{{asset('')}}web-assets/css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="{{asset('')}}web-assets/css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="{{asset('')}}web-assets/css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="{{asset('')}}web-assets/css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="{{asset('')}}web-assets/css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="{{asset('')}}web-assets/css/custom.css" rel="stylesheet" media="screen">
+      <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+  <style>
+    .site-logo {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
 }
 
-   </style>
-    <body>
-    <div class="main-page-wrapper">
+@media (max-width: 768px) {
+    .site-logo {
+        height: 55px;
+    }
+}
 
-       
-        <!-- Preloader -->
-        <div id="loader-wrapper">
-				<div id="loader"></div>
-		</div>
-        <header class="theme-menu-wrapper">
-				<!-- ========================== Theme Menu =========================== -->
-				<div class="theme-main-menu overlay-position right-half-bg">
-					<div class="container">
-						<div class="menu-wrapper">
-							<div class="clearfix content-holder">
-								<!-- Logo -->
-								<div class="logo float-left"><a href="#"><img style="margin-top: -37px;	margin-left: 63px;
-									width: 150px;" src="{{asset('')}}mainsite/images/logo/gfx-trade-logo.png" alt="Logo"></a>
-								</div>
+@media (max-width: 480px) {
+    .site-logo {
+        height: 50px;
+    }
+}
 
-								<!-- ============================ Theme Menu ========================= -->
-								<nav class="theme-main-menu navbar float-right" id="mega-menu-wrapper">
-									<!-- Brand and toggle get grouped for better mobile display -->
-								   <div class="navbar-header">
-								     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-								       <span class="sr-only">Toggle navigation</span>
-								       <span class="icon-bar"></span>
-								       <span class="icon-bar"></span>
-								       <span class="icon-bar"></span>
-								     </button>
-								   </div>
-								   <!-- Collect the nav links, forms, and other content for toggling -->
-								   <div class="collapse navbar-collapse" id="navbar-collapse-1">
-										<ul class="nav">
-											<li class="active"><a href="{{url('/')}}" class="tran3s">Home</a></li>
-											<li><a href="{{route('about-us')}}" class="tran3s">ABOUT US</a></li>
-											<li><a href="{{route('services')}}" class="tran3s">SERVICES</a></li>
-											<li><a href="{{route('faq')}}" class="tran3s">FAQ</a></li>
-											<li><a href="{{route('support')}}" class="tran3s">CONTACT US</a></li>
-											<li><a href="{{route('login')}}" class="tran3s">LOGIN</a></li>
-											<li><a href="{{route('register')}}" class="tran3s">REGISTER</a></li>
-											<!-- <li><a class="tran3s" href="#">Free Consulting <i class="fa fa-arrow-right"></i></a></li> -->
-										</ul>
-									
-								   </div><!-- /.navbar-collapse -->
-								</nav> <!-- /.theme-main-menu -->
-							</div>
-						</div> <!-- /.menu-wrapper -->
-					</div> <!-- /.container -->
-				</div> <!-- /.theme-main-menu -->
-			</header>
+  </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="{{asset('')}}web-assets/images/loader.svg" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="./">
+						<img class="site-logo" src="{{asset('')}}web-assets/images/logo3-swetkranti.png"   alt="Logo">
+					</a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item "><a class="nav-link" href="{{route('Index')}}">Home</a>
+                                   
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('about-us')}}">About Us</a>
+                                    <li class="nav-item"><a class="nav-link" href="{{route('services')}}">How It Work</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{route('blog')}}">Blog</a></li>
+                                   
+                                    <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Header Btn Start -->
+                        <div class="header-btn">
+                            <a href="{{route('register')}}" class="btn-default">Register</a>
+                        </div>
+                        <!-- Header Btn End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
