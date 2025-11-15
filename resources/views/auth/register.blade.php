@@ -39,8 +39,8 @@
         }
 
         .btn-primary,.btn-primary:hover {
-            border-color: #36c2e8 !important;
-            background-color: #36c2e8 !important;
+            border-color: #f1f6f7ff !important;
+            background-color: #fed525 !important;
         }
 
     </style>
@@ -60,7 +60,7 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
                                     <div class="text-center mb-3">
-                                        <a href="{{asset('')}}"><img src="{{asset('')}}upnl/images/tronfx.png" style="width: 199px;" alt=""></a>
+                                        <a href="{{asset('')}}"><img src="{{asset('')}}web-assets/images/logo.svg" style="width: 199px;" alt=""></a>
                                     </div>
                                     <h4 class="text-center mb-4">Sign up your account</h4>
                                     <form  method="POST" action="{{ route('registers') }}">

@@ -1,411 +1,1490 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	  <meta name="description" content="{{siteName()}} | Home" />
-    <meta property="og:title" content="{{siteName()}} | Home" />
-    <meta property="og:description" content="{{siteName()}} | Home" />
-       <meta property="og:image" content="{{asset('upnl/images/tronfx.png')}}"			
-		<!-- SITE TITLE -->
-		<title>{{siteName()}}</title>			
-		<!-- Latest Bootstrap min CSS -->
-		<link rel="stylesheet" href="{{asset('')}}web-assets/bootstrap/css/bootstrap.min.css">	
-		  <link rel="icon" type="image/x-icon" href="{{asset('')}}web-assets/img/favicon.1.png">
-		<!-- Google Font -->
-		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">  		
-		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="{{asset('')}}web-assets/fonts/font-awesome.min.css">
-		<link rel="stylesheet" href="{{asset('')}}web-assets/fonts/themify-icons.css">
-		<link rel="stylesheet" href="{{asset('')}}web-assets/css/materialdesignicons-min.css">	
-		<!--- owl carousel Css-->
-		<link rel="stylesheet" href="{{asset('')}}web-assets/owlcarousel/css/owl.carousel.css">
-		<link rel="stylesheet" href="{{asset('')}}web-assets/owlcarousel/css/owl.theme.css">	
-		<!-- animate CSS -->
-		<link rel="stylesheet" href="{{asset('')}}web-assets/css/animate.css">					
-		<!-- MAGNIFIC CSS -->
-		<link rel="stylesheet" href="{{asset('')}}web-assets/css/magnific-popup.css">					
-		<!-- Style CSS -->						
-		<link rel="stylesheet" href="{{asset('')}}web-assets/css/style-two.css">	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>@media(max-width: 400px) {
-		     .home_btn a {
-			margin-right: 10px;
-			padding: 10px;
-			margin-left: 104px;
-			height: 51px;
-			width: 143px;
-			text-align: center;
-		}
-		}
-.navbar-brand img {
-    width: 275px;
-    height: auto;
-    margin-top: 18px;
-}
-	 </style>
+@include('layouts.mainsite.header')
+    <!-- Header End -->
 
-	</head>
-	 
-    <body data-spy="scroll" data-offset="80">
-	
-		<!-- particles -->
-        <div id="particles-js"></div>	
-	
+    <!-- Hero Section Start -->
+    <div class="hero hero-bg-image dark-section parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Pure Dairy Goodness</h3>
+                            <h1 class="text-anime-style-3" data-cursor="-opaque">Welcome to Shwet Kranti Dairy – Pure Milk, Pure Trust</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Shwet Kranti Dairy mein hum aapke ghar tak 100% shuddh, taaza aur poshtik doodh pahunchate hain.
+                               Hamari dairy ka har ek product natural, chemical-free, aur farm-fresh hota hai.</p>
+                        </div>
+                        <!-- Section Title End -->
 
-        <!-- START NAVBAR -->
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-    		<div class="container">
-			    <a class="navbar-brand" href=""><img src="{{asset('')}}upnl/images/tronfx.png" alt=""></a>
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span>
-			    </button><!--end button-->
-			    <div class="collapse navbar-collapse" id="navbarCollapse">
-			        <ul id="navbar-navlist" class="navbar-nav ms-auto">
-			            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-			            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-					    <li class="nav-item"><a class="nav-link" href="#feature">Features</a></li>						
-			            <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
-			            <li class="nav-item"><a class="nav-link" target="_blank" href="">Plan</a></li>
-			            <li class="nav-item"><a class="nav-link" href="{{route('login')}}">Login</a></li>
-			            <li class="nav-item"><a class="nav-link" href="{{route('register')}}">Registration</a></li>
-			        </ul><!--END NAVBAR NAV-->
-			    </div><!--END COLLAPSE-->
-		    </div><!-- END CONTAINER -->
-		</nav>
-		<!-- END NAVBAR --> 	
-		<!-- START HOME -->
-		<section id="home" class="home_bg">
-			<div class="container">
-				<div class="row">
-				  <div class="col-lg-6 col-sm-12 col-xs-12">
-					<div class="hero-text">
-						 <h2>Turn Your Dreams Into Realty With  OCEAN USDT</h2>
-						 <p> OCEAN USDT is 100% decentralized digital platform that is based
-                            on blockchain technology and secured by cryptography.</p>
-						    <div class="home_btn">
-							<a href="{{route('login')}}" class="btn_two">Login</a>
-							  </div>
-					
-							
-					</div> 
-				  </div><!--- END COL -->
-				  <div class="col-lg-6 col-sm-12 col-xs-12 text-center">
-					<div class="buy-icons">
-						<img src="{{asset('')}}web-assets/img/tron-fx-robot.png" class="img-fluid tm-ethereum">
-					
-					</div>
-				  </div><!--- END COL -->			  
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END  HOME -->
-		
-		<!-- START ABOUT -->
-		<section class="about_us section-padding">
-		   <div class="container">			
-				<div class="section-title text-center">
-					<h1>Powering the  OCEAN USDT network</h1>
-					<p>The  OCEAN USDT token serves three distinct purposes:
-        governance over the network, staking and bonding.</p>
-				</div>				
-				<div class="row">					
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-						<div class="single_about">
-							<img src="{{asset('')}}web-assets/img/icon/secure.png" alt="image" />
-							<h3>Governance</h3>
-							<p> OCEAN USDT token holders have complete control over the protocol. All privileges, which on other platforms are exclusive to miners, will be given to the Relay Chain participants (DOT holders), including managing exceptional events such as protocol upgrades and fixes.</p>
-						</div>
-					</div><!-- END COL -->			
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="single_about">
-							<img src="{{asset('')}}web-assets/img/icon/insurance.png" alt="image" />
-							<h3>Staking</h3>
-							<p>Game theory incentivizes token holders to behave in honest ways. Good actors are rewarded by this mechanism whilst bad actors will lose their stake in the network. This ensures the network stays secure.</p>
-						</div>
-					</div><!-- END COL -->			
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="single_about">
-							<img src="{{asset('')}}web-assets/img/icon/industry.png" alt="image" />
-							<h3>Bonding</h3>
-							<p>New parachains are added by bonding tokens. Outdated or non-useful parachains are removed by removing bonded tokens. This is a form of proof of stake.</p>
-						</div>
-					</div><!-- END COL -->							
-				</div><!-- END ROW -->
-			</div><!-- END CONTAINER -->
-		</section>
-		<!-- END ABOUT -->		
+                        <div class="hero-content-body">
+                            <div class="hero-btn">
+                                <a href="contact.html" class="btn-default">get started</a>
+                            </div>
+                            <!-- Trusted Clients Box Start -->
+                            <div class="trusted-clients-box wow fadeInUp" data-wow-delay="0.2s">
+                                <!-- Trusted Clients Images Start -->
+                                <div class="trusted-clients-images">
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-3.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-4.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image add-more">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <!-- Trusted Clients Images End -->
 
-		<!-- START ABOUT US CONTENT -->
-		<section id="about" class="about_area section-padding">
-			<div class="container">			
-				<div class="row">
-				  <div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<div class="about-img">
-						<img src="{{asset('')}}web-assets/img/580b57fbd9996e24bc43be10.png" class="img-fluid tm-ethereum" alt="about-image" />
-					</div>
-				  </div><!--- END COL -->				  
-				  <div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0" >
-					<div class="about-text">
-						 <h2>About  OCEAN USDT</h2>
-						 
-						 <p>OCEAN USDT is a self-executing smart contract on the blockchain, it's a network marketing business with a unique strategy.
-                        <br>
-                        A blockchain is a decentralized, distributed and public digital ledger that is used to record transactions across many computers so that the record cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network.<br>
-                        We have developed a state-of-the-art marketplace where you can securely and reliably buy and sell any items. The fastest and most flexible asset platform in existence. It will include easy cryptocurrency payments integration, and even a digital arbitration system.
+                                <!-- Satisfy Client Content Start -->
+                                <div class="trusted-clients-content">
+                                    <p>Trusted By More Than 2k Clients</p>
+                                </div>
+                                <!-- Satisfy Client Content End -->
+                            </div>
+                            <!-- Trusted Clients Box End -->
+                        </div>
+                    </div>
+                    <!-- Hero Content End -->
+                </div>
 
+                <div class="col-lg-4">
+                    <!-- Hero Image Circle Start -->
+                    <div class="hero-image-circle">
+                        <!-- Hero Title Image Start -->
+                        <div class="hero-title-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('')}}web-assets/images/hero-title-image.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Hero Title Image End -->
 
-</p>
-					</div>
-				  </div><!--- END COL -->				  
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END ABOUT US CONTENT -->
+                        <!-- Learn More Circle Start -->
+                        <div class="learn-more-circle">
+                            <a href="about.html"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
+                        </div>
+                        <!-- Learn More Circle End -->
+                    </div>
+                    <!-- Hero Image Circle End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
 
+    <!-- Scrolling Ticker Section Start -->
+    <div class="our-scrolling-ticker">
+        <!-- Scrolling Ticker Start -->
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Grass-Fed Cows</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Planet-Conscious Practices</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Nutrient-Rich Milk</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Ethical Animal Care</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Grass-Fed Cows</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Planet-Conscious Practices</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Nutrient-Rich Milk</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Ethical Animal Care</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+            </div>
 
-		<!-- START BUY SELL -->
-		<section class="buy_sell_area section-padding" id="feature">
-			<div class="container">					
-				<div class="section-title text-center">
-					<h1>Here We are presenting Our Features </h1>
-				</div>					
-				<div class="row">
-				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<div class="buy_sell_list">
-						<img src="{{asset('')}}web-assets/img/icon/bank.png" alt="image" />
-						<h4 style="color: #ffff!important">True interoperability</h4>
-						<p> OCEAN USDT enables cross-blockchain transfers of any type of data or asset, not just tokens. Connecting to  OCEAN USDT gives you the ability to interoperate with a wide variety of blockchains.</p>
-					</div>
-					<div class="buy_sell_list">
-						<img src="{{asset('')}}web-assets/img/icon/wallet.png" alt="image" />
-						<h4 style="color: #ffff!important">Economic scalability</h4>
-						<p> OCEAN USDT provides unprecedented economic scalability by enabling a common set of validators to secure multiple blockchains.  OCEAN USDT provides transactional scalability by spreading transactions.</p>
-					</div>
-				  </div><!--- END COL -->	
-				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<div class="portfolio_list_img">
-						<img src="{{asset('')}}web-assets/img/logo-tronfx.png" class="img-fluid tm-ethereum" alt="" / style="margin-top: 90px">
-					</div>
-				  </div><!--- END COL -->	
-				  <div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<div class="buy_sell_list">
-						<img src="{{asset('')}}web-assets/img/icon/personal%20detail%20icons1%20(1).png" alt="image" />
-						<h4 style="color: #ffff!important">creater of OCEAN USDT </h4>
-						<h6>Software engineer</h6>
-						<p>Mr. Praneet ray </p>
-						 	<p style="margin-left:80px;">From USA</p>
-						 	 <br>
-						 	  <br>
-						 	   <br>
-						 	   <br>
-						  
-					</div>
-					<div class="buy_sell_list">
-						<img src="{{asset('')}}web-assets/img/icon/secure.png" alt="image" />
-						<h4 style="color: #ffff!important">
-Security</h4>
-						<p> OCEAN USDT novel data availability and validity scheme allows chains to interact with each other in a meaningful way. Chains remain independent in their governance, but united in their security.</p>
-					</div>
-				  </div><!--- END COL -->				  
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</section>
-		<!-- END BUY SELL -->			
-		 
+            <div class="scrolling-content">
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Grass-Fed Cows</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Planet-Conscious Practices</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Nutrient-Rich Milk</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Ethical Animal Care</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Grass-Fed Cows</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Planet-Conscious Practices</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Nutrient-Rich Milk</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Ethical Animal Care</span>
+                <span><img src="{{asset('')}}web-assets/images/icon-sparkle.svg" alt="">Sustainable Farming</span>
+            </div>
+        </div>
+        <!-- Scrolling Ticker End -->
+    </div>
+    <!-- Scrolling Ticker Section End -->
 
-				
+    <!-- About Us Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Images Start -->
+                    <div class="about-us-images">
+                        <div class="about-image-box">
+                            <!-- About Us Image Start -->
+                            <div class="about-image-1">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/about-us-image-1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- About Us Image End -->
 
-		<!-- START HOW TO BUY -->
-		<section class="how_to_buy_area section-padding" style="display:block;">
-		   <div class="container">			
-				<div class="section-title text-center">
-					<h1>Get Started in a Few Minutes</h1>
-				</div>				
-				<div class="row text-center">					
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="single_how_to_buy">
-							<img src="{{asset('')}}web-assets/img/icon/man.png" alt="image" />
-							<h4>Create Account</h4>
-							<p>First of all sign up by the link, Fill your details and create account.</p>
-						</div>
-					</div><!-- END COL -->			
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="single_how_to_buy">
-							<img src="{{asset('')}}web-assets/img/icon/bank2.png" alt="image" />
-							<h4>Link Your Crypto Wallet</h4>
-							<p>After create your account link the account with the process.</p>
-						</div>
-					</div><!-- END COL -->			
-					<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-						<div class="single_how_to_buy">
-							<img src="{{asset('')}}web-assets/img/icon/buy.png" alt="image" />
-							<h4>Start Earning </h4>
-							<p>After complete all things start your trading.</p>
-						</div>
-					</div><!-- END COL -->							
-				</div><!-- END ROW -->
-			</div><!-- END CONTAINER -->
-		</section>
-		<!-- END HOW TO BUY  -->
-	
+                            <!-- About Us Circle Start -->
+                            <div class="about-us-circle">
+                                <a href="about.html"><img src="{{asset('')}}web-assets/images/about-us-circle.svg" alt=""></a>
+                            </div>
+                            <!-- About Us Circle End -->
+                        </div>
 
-		<!-- START FAQ -->
-		<section id="faq" class="faq1-area section-padding">
-			<div class="container">
-				<div class="section-title text-center">
-					<h1>Frequently Asked Questions</h1>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-7 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-						<div class="accordion" id="accordionExample">
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingOne">
-							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								What is  OCEAN USDT?
-							  </button>
-							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-								 OCEAN USDT relay chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.
+                        <!-- About Us Image Start -->
+                        <div class="about-image-2">
+                            <figure class="image-anime">
+                                <img src="{{asset('')}}web-assets/images/about-us-image-2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Us Image End -->
+                    </div>
+                    <!-- About Us Images End -->
+                </div>
 
-                         OCEAN USDT state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard.
-							  </div>
-							</div>
-						  </div>
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingTwo">
-							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									What does “Decentralized” mean?
-							  </button>
-							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-					
-                        It is a system in which there are no admins,no MD - CMD there is no single server or system monitoring, project management.
-                        Decentralized marketing is created with an automated contract that offers
-                        you maximum security and sustainability. A smart contract is an automatic
-                        execution algorithm. Its exists within the “BUSD BLOCKCHAIN”, the number
-                        one cryptographic currency among those with which smart contracts ca be
-                        created* the blockchain is an immutable record of transactions and
-                        information, which is cryptographically.
-                        SMART CONTRACT
-							  </div>
-							</div>
-						  </div>
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingThree">
-							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								What is SMART CONTRACT ?
-							  </button>
-							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-								This is a new phenomenon of the
-                                modern decentralized economy allows,
-                                in accordance with the program code,
-                                process and distribute financial flows of
-                                digital assets.
-                                All processes take place in an open,
-                                decentralized blockchain network
-							  </div>
-							</div>
-						  </div>
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingFour">
-							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						What Is Blockchain Technology?
-							  </button>
-							</h2>
-							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-							Blockchain, sometimes referred to as distributed ledger technology (DLT), makes the history of any digital asset unalterable and transparent through the use of decentralization and cryptographic hashing.
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-us-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">About us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Fresh milk straight from our pasture to your table</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We're more than just a farm - we're your neighbors. We're proud to be part of the local community, providing families with wholesome dairy that's produced just down the road. Our cows are pasture-raised.</p>
+                        </div>
+                        <!-- Section Title End -->
 
-                A simple analogy for how blockchain technology operates can be compared to how a Google Docs document works. When you create a Google Doc and share it with a group of people, the document is simply distributed instead of copied or transferred. This creates a decentralized distribution chain that gives everyone access to the base document at the same time.
-							  </div>
-							</div>
-						  </div>
-						  <div class="accordion-item">
-							<h2 class="accordion-header" id="headingFour">
-							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-					What is cryptocurrency?
-							  </button>
-							</h2>
-							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-							  <div class="accordion-body">
-						Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It’s a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world, cryptocurrency payments exist purely as digital entries to an online database describing specific transactions. When you transfer cryptocurrency funds, the transactions are recorded in a public ledger. Cryptocurrency is stored in digital wallets.
-							  </div>
-							</div>
-						  </div>
-						</div>						
-					</div><!-- END COL  -->
-					<div class="col-lg-5 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-						<div class="faq-img">
-							<img src="{{asset('')}}upnl/images/tronfx.png" class="img-fluid" alt="faq image" />
-						</div>
-					</div><!-- END COL  -->
-				</div><!--END  ROW  -->
-			</div><!-- END CONTAINER  -->
-		</section>
-		<!-- END FAQ -->
-		
-		<!-- START FOOTER -->
-		<div class="footer">
-			<div class="container">		
-				<div class="row text-center">						
-					<div class="col-lg-12 col-sm-12 col-xs-12">
-						<div class="footer_menu">
-							<img src="{{asset('')}}upnl/images/tronfx.png" id="img_footer">
-<!--<p> OCEAN USDT takes a different approach by letting blockchains pool their security, which means that the blockchains' security is aggregated and applied to all.-->
+                        <!-- About Us Body Start -->
+                        <div class="about-us-body">
+                            <!-- About Us List Start -->
+                            <div class="about-us-list wow fadeInUp" data-wow-delay="0.4s">
+                                <h3>Our Mission:</h3>
+                                <ul>
+                                    <li>Ensures the health and welfare of our animals.</li>
+                                    <li>Pure, Wholesome Dairy Products You Can Trust.</li>
+                                    <li>Deliver fresh, high-quality dairy products by caring.</li>
+                                </ul>
+                            </div>
+                            <!-- About Us List End -->
 
-<!--By connecting to  OCEAN USDT, blockchain developers can secure their blockchain from day one.</p>-->
-						</div>						
-						<div class="footer_copyright">
-							<p>&copy; 2025 OCEAN USDT |  All Rights Reserved.</p>
-						</div>	
-						<div class="footer_profile">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-telegram"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								<!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
-							</ul>
-						</div>						
-					</div><!--- END COL -->							
-				</div><!--- END ROW -->					
-			</div><!--- END CONTAINER -->
-		</div>
-		<!-- END FOOTER -->		
+                            <!-- Years Experience Box Start -->
+                            <div class="years-experience-box">
+                                <h2><span class="counter">80</span>+</h2>
+                                <p>Years Of Experience</p>
+                            </div>
+                            <!-- Years Experience Box End -->
+                        </div>
+                        <!-- About Us Body End -->
 
-		<!-- Latest jQuery -->
-			<script src="{{asset('')}}web-assets/js/jquery-1.12.4.min.js"></script>
-		<!-- Latest compiled and minified Bootstrap -->
-			<script src="{{asset('')}}web-assets/bootstrap/js/bootstrap.min.js"></script>
-		<!-- modernizer JS -->		
-			<script src="{{asset('')}}web-assets/js/modernizr-2.8.3.min.js"></script>																		
-		<!-- owl-carousel min js  -->
-			<script src="{{asset('')}}web-assets/owlcarousel/js/owl.carousel.min.js"></script>				
-		<!-- magnific-popup js -->               
-			<script src="{{asset('')}}web-assets/js/jquery.magnific-popup.min.js"></script>			
-		<!-- jquery counterup -->
-			<script src="{{asset('')}}web-assets/js/jquery.counterup.min.js"></script>	
-			<script src="{{asset('')}}web-assets/js/countdown.js"></script>		
-		<!-- particles -->
-			<script src="{{asset('')}}web-assets/js/particles.min.js"></script>
-			<script src="{{asset('')}}web-assets/js/app.js"></script>			
-		<!-- WOW - Reveal Animations When You Scroll -->
-			<script src="{{asset('')}}web-assets/js/wow.min.js"></script>			
-		<!-- scrolltopcontrol js -->																				
-			<script src="{{asset('')}}web-assets/js/scrolltopcontrol.js"></script>																				
-		<!-- scripts js -->
-			<script src="{{asset('')}}web-assets/js/scripts.js"></script>		
-    </body>
+                        <!-- About Item Box Start -->
+                        <div class="about-item-box wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-about-us-item-1.svg" alt="">
+                                </div>
+                                <div class="about-us-item-content">
+                                    <h3>Driven by Tradition, Guided by Innovation</h3>
+                                </div>
+                            </div>
+                            <!-- About Us Item End -->
 
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-about-us-item-2.svg" alt="">
+                                </div>
+                                <div class="about-us-item-content">
+                                    <h3>Committed to Sustainable & Ethical Farming</h3>
+                                </div>
+                            </div>
+                            <!-- About Us Item End -->
+                        </div>
+                        <!-- About Item Box End -->
 
+                        <!-- About Us Button Start -->
+                        <div class="about-us-btn wow fadeInUp" data-wow-delay="0.8s">
+                            <a href="about.html" class="btn-default">learn more about</a>
+                        </div>
+                        <!-- About Us Button End -->
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
 
-</html>
+    <!-- Our Services Section Start -->
+    <div class="our-services dark-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">our services</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Experience the purity of our dairy services</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Our Services Box Start -->
+                    <div class="our-services-box">
+                        <!-- Services Item Start -->
+                        <div class="services-item wow fadeInUp">
+                            <div class="services-item-content">
+                                <h3><a href="service-single.html">Organic Dairy Farming</a></h3>
+                                <p>We raise our cows on certified organic pastures using sustainable and chemical-free practices to ensure pure, natural milk.</p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-services-1.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Services Item End -->
+
+                        <!-- Our Services Image Start -->
+                        <div class="services-image">
+                            <figure class="image-anime reveal">
+                                <img src="{{asset('')}}web-assets/images/services-img-1.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Our Services Image End -->
+                    </div>
+                    <!-- Our Services Box End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Our Services Box Start -->
+                    <div class="our-services-box">
+                        <!-- Services Item Start -->
+                        <div class="services-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="services-item-content">
+                                <h3><a href="service-single.html">Home Delivery Services</a></h3>
+                                <p>Fresh milk and dairy products delivered straight from our farm to your doorstep, preserving freshness and convenience.</p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-services-2.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Services Item End -->
+
+                        <!-- Our Services Image Start -->
+                        <div class="services-image">
+                            <figure class="image-anime reveal">
+                                <img src="{{asset('')}}web-assets/images/services-img-2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Our Services Image End -->
+                    </div>
+                    <!-- Our Services Box End -->
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Our Services Box Start -->
+                    <div class="our-services-box">
+                        <!-- Services Item Start -->
+                        <div class="services-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="services-item-content">
+                                <h3><a href="service-single.html">Grass-Fed Cow Management</a></h3>
+                                <p>Our cows are fed a 100% grass-based diet, promoting better animal health producing milk that's richer in nutrients and flavor.</p>
+                            </div>
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-services-3.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Services Item End -->
+
+                        <!-- Our Services Image Start -->
+                        <div class="services-image">
+                            <figure class="image-anime reveal">
+                                <img src="{{asset('')}}web-assets/images/services-img-3.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Our Services Image End -->
+                    </div>
+                    <!-- Our Services Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
+                        <p><span>Free</span>Let's make something great work together. <a href="contact.html">Get Free Quote</a></p>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row">
+                <!-- Section Title Start -->
+                <div class="section-title section-title-center">
+                    <h3 class="wow fadeInUp">Why Choose Us</h3>
+                    <h2 class="text-anime-style-3" data-cursor="-opaque">Reliable laboratory results you can trust</h2>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 order-lg-1 order-1">
+                    <!-- Why Choose Box Start -->
+                    <div class="why-choose-box">
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-1.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Commitment to 100% Natural</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-2.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Farm-Fresh Milk Every Day</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-3.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Pure, Natural, No Chemicals</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+                    </div>
+                    <!-- Why Choose Box End -->
+                </div>
+
+                <div class="col-lg-4 order-lg-2 order-3">
+                    <!-- Why Choose Image Start -->
+                    <div class="why-choose-image">
+                        <img src="{{asset('')}}web-assets/images/why-choose-img.png" alt="">
+                    </div>
+                    <!-- Why Choose Image End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 order-lg-3 order-2">
+                    <!-- Why Choose Box Start -->
+                    <div class="why-choose-box">
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-4.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Rigorous Quality Control</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.2s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-5.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Eco-Friendly Farming Practices</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+
+                        <!-- Why Choose Item Start -->
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-why-choose-6.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Why Choose Content Start -->
+                            <div class="why-choose-content">
+                                <h3>Trusted By Thousands Daily</h3>
+                                <p>We provide dairy that's completely free from </p>
+                            </div>
+                            <!-- Why Choose Content End -->
+                        </div>
+                        <!-- Why Choose Item End -->
+                    </div>
+                    <!-- Why Choose Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Intro Video Section Start -->
+    <div class="intro-video dark-section parallaxie">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">our story</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Our passionate story of fresh dairy farming</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Intro Video Image Start -->
+                    <div class="intro-video-box">
+                        <!-- Video Play Circle Start -->
+                        <div class="video-play-circle">
+                            <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play"><img src="{{asset('')}}web-assets/images/video-play-circle.svg" alt=""></a>
+                        </div>
+                        <!-- Video Play Circle End -->
+
+                        <!-- Intro Video Item List Start -->
+                        <div class="intro-video-item-list">
+                            <!-- Intro Video Item Start -->
+                            <div class="intro-video-item wow fadeInUp">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-intro-video-1.svg" alt="">
+                                </div>
+                                <div class="intro-video-content">
+                                    <h3>Farm-Fresh Quality Guaranteed</h3>
+                                    <p>Our milk is sourced directly from our own farm, ensuring the freshest & highest quality.</p>
+                                </div>
+                            </div>
+                            <!-- Intro Video Item End -->
+
+                            <!-- Intro Video Item Start -->
+                            <div class="intro-video-item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-intro-video-2.svg" alt="">
+                                </div>
+                                <div class="intro-video-content">
+                                    <h3>100% Natural and Pure</h3>
+                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                </div>
+                            </div>
+                            <!-- Intro Video Item End -->
+
+                            <!-- Intro Video Item Start -->
+                            <div class="intro-video-item wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-intro-video-3.svg" alt="">
+                                </div>
+                                <div class="intro-video-content">
+                                    <h3>Eco-Friendly Packaging</h3>
+                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every morning.</p>
+                                </div>
+                            </div>
+                            <!-- Intro Video Item End -->
+                        </div>
+                        <!-- Intro Video Item List End -->
+                    </div>
+                    <!-- Intro Video Btn End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Intro Video Section End -->
+
+    <!-- Our Quality Section Start -->
+    <div class="our-quality">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">Quality Experience</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Pure dairy products backed by quality promise</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Our Quality Box Start -->
+                    <div class="our-quality-box">
+                        <!-- Quality Image Content Start -->
+                        <div class="quality-image-content">
+                            <!-- Quality Image Start -->
+                            <div class="quality-image">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/quality-image-1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Quality Image End -->
+
+                            <!-- Quality Content Start -->
+                            <div class="quality-content">
+                                <!-- Section Title Start -->
+                                <div class="section-title">
+                                    <h2 class="text-anime-style-3" data-cursor="-opaque">Pure natural organic essentials</h2>
+                                    <p class="wow fadeInUp">Our dairy products are crafted using only natural ingredients and methods From pasture-raised cows to chemical-free processing</p>
+                                </div>
+                                <!-- Section Title End -->
+
+                                <!-- Quality Button Start -->
+                                <div class="quality-button wow fadeInUp" data-wow-delay="0.2s">
+                                    <a href="contact.html" class="btn-default">contact us</a>
+                                </div>
+                                <!-- Quality Button End -->
+                            </div>
+                            <!-- Quality Content End -->
+                        </div>
+                        <!-- Quality Image Content End -->
+
+                        <!-- Quality Image Content Start -->
+                        <div class="quality-image-content">
+                            <!-- Quality Image Start -->
+                            <div class="quality-image">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/quality-image-2.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Quality Image End -->
+
+                            <!-- Quality Content Start -->
+                            <div class="quality-content">
+                                <!-- Section Title Start -->
+                                <div class="section-title">
+                                    <h2 class="text-anime-style-3" data-cursor="-opaque">Featured recipe</h2>
+                                    <p class="wow fadeInUp" data-wow-delay="0.2s">Discover our favorite way to enjoy fresh, farm-sourced dairy. Each featured recipe is crafted with wholesome ingredients and rich, natural flavors perfect.</p>
+                                </div>
+                                <!-- Section Title End -->
+
+                                <!-- Quality Info List Start -->
+                                <div class="quality-info-list wow fadeInUp" data-wow-delay="0.4s">
+                                    <ul>
+                                        <li>Nutrient-Dense Recipes That Nourish Body and Soul</li>
+                                        <li>A Heritage of Flavor, Reimagined for Modern Living</li>
+                                    </ul>
+                                </div>
+                                <!-- Quality Info List End -->
+                            </div>
+                            <!-- Quality Content End -->
+                        </div>
+                        <!-- Quality Image Content End -->
+                    </div>
+                    <!-- Our Quality Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Quality Section End -->
+
+    <!-- Product Benefits Section Start -->
+    <div class="product-benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Product Benefits Box Start -->
+                    <div class="product-benefits-box">
+                        <!-- Product Benefits Item Start -->
+                        <div class="product-benefit-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-product-benefit-1.svg" alt="">
+                            </div>
+                            <div class="product-benefits-item-content">
+                                <h3>100% Organic Product</h3>
+                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                            </div>
+                        </div>
+                        <!-- Product Benefits Item End -->
+
+                        <!-- Product Benefits Item Start -->
+                        <div class="product-benefit-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-product-benefit-2.svg" alt="">
+                            </div>
+                            <div class="product-benefits-item-content">
+                                <h3>High Quality Milk</h3>
+                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                            </div>
+                        </div>
+                        <!-- Product Benefits Item End -->
+
+                        <!-- Product Benefits Item Start -->
+                        <div class="product-benefit-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-product-benefit-3.svg" alt="">
+                            </div>
+                            <div class="product-benefits-item-content">
+                                <h3>Wide Assortment</h3>
+                                <p>Pure, natural goodness sourced farms free from chemicals, pesticides.</p>
+                            </div>
+                        </div>
+                        <!-- Product Benefits Item End -->
+                    </div>
+                    <!-- Product Benefits Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Benefits Section End -->
+
+    <!-- Our Facts Section Start -->
+    <div class="our-facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Facts Image Start -->
+                    <div class="facts-image">
+                        <figure class="image-anime reveal">
+                            <img src="{{asset('')}}web-assets/images/facts-image.jpg" alt="">
+                        </figure>
+
+                        <!-- Facts CTA Box Start -->
+                        <div class="facts-cta-box">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-headset.svg" alt="">
+                            </div>
+                            <div class="facts-cta-content">
+                                <p>Need Answers? Let's Clear Things Up for You!</p>
+                                <h3><a href="tel:254882963">+(91) 254-882-963</a></h3>
+                            </div>
+                        </div>
+                        <!-- Facts CTA Box End -->
+                    </div>
+                    <!-- Facts Image End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Facts Content Start -->
+                    <div class="facts-content dark-section">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Our Fun Facts</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Discover amazing insights & surprising fact about our dairy farm</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Dive into the fascinating world of dairy farming with us! From the careful nurturing of our cows to the sustainable practices that keep our farm green, every step in the journey of our pure milk.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Our Facts List Start -->
+                        <div class="our-facts-list wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Facts Item Item Start -->
+                            <div class="facts-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-facts-item-1.svg" alt="">
+                                </div>
+                                <div class="facts-item-content">
+                                    <h3><span class="counter">99</span>%</h3>
+                                    <p>We take pride in delivering top-quality dairy products that our customers love.</p>
+                                </div>
+                            </div>
+                            <!-- Facts Item Item End -->
+
+                            <!-- Facts Item Item Start -->
+                            <div class="facts-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-facts-item-2.svg" alt="">
+                                </div>
+                                <div class="facts-item-content">
+                                    <h3><span class="counter">1200</span>+</h3>
+                                    <p>Our healthy, well-cared-for herd grazes freely on nutrient-rich pastures, producing milk.</p>
+                                </div>
+                            </div>
+                            <!-- Facts Item Item End -->
+                        </div>
+                        <!-- Our Facts List End -->
+                    </div>
+                    <!-- Facts Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Facts Section End -->
+
+    <!-- Our Benefits Section Start -->
+    <div class="our-benefits dark-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Our Benefits Images Start -->
+                    <div class="our-benefits-images">
+                        <!-- Benefits Image Box 1 Start -->
+                        <div class="benefits-image-box-1">
+                            <!-- Benefits Image Start -->
+                            <div class="benefits-image">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/benefits-image-1.jpg" alt="">
+                                </figure>
+
+                                <!-- Facts CTA Box Start -->
+                                <div class="facts-cta-box wow fadeInUp">
+                                    <div class="icon-box">
+                                        <img src="{{asset('')}}web-assets/images/icon-headset.svg" alt="">
+                                    </div>
+                                    <div class="facts-cta-content">
+                                        <p>Got questions? we're here to help!</p>
+                                    </div>
+                                </div>
+                                <!-- Facts CTA Box End -->
+                            </div>
+                            <!-- Benefits Image End -->
+
+                            <!-- Review Box Start -->
+                            <div class="review-box wow fadeInUp" data-wow-delay="0.2s">
+                                <!-- Review Content Start -->
+                                <div class="review-content">
+                                    <div class="review-rating-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="review-rating-content">
+                                        <p>More Than 1K+ Trusted Clients</p>
+                                    </div>
+                                </div>
+                                <!-- Review Content End -->
+
+                                <!-- Trusted Clients Images Start -->
+                                <div class="trusted-clients-images">
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-3.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/trusted-clients-img-4.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="trusted-clients-image add-more">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <!-- Trusted Clients Images End -->
+                            </div>
+                            <!-- Review Box End -->
+                        </div>
+                        <!-- Benefits Image Box 1 End -->
+
+                        <!-- Benefits Image Box 2 Start -->
+                        <div class="benefits-image-box-2">
+                            <!-- Learn More Circle Start -->
+                            <div class="learn-more-circle">
+                                <a href="about.html"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
+                            </div>
+                            <!-- Learn More Circle End -->
+
+                            <!-- Benefits Image Start -->
+                            <div class="benefits-image">
+                                <figure class="image-anime reveal">
+                                    <img src="{{asset('')}}web-assets/images/benefits-image-2.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Benefits Image End -->
+                        </div>
+                        <!-- Benefits Image Box 2 End -->
+                    </div>
+                    <!-- Our Benefits Images End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Our Benefits Content Start -->
+                    <div class="our-benefits-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Our Benefits</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Enjoy the daily benefits of farm-fresh goodness</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Benefits Item Box Start -->
+                        <div class="benefits-item-box">
+                            <!-- Benefits Item Start -->
+                            <div class="benefits-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-benefits-item-1.svg" alt="">
+                                </div>
+                                <div class="benefits-item-content">
+                                    <h3>Unmatched Freshness, Delivered Daily</h3>
+                                    <p>We believe that the best milk is the freshest milk. That's why we deliver our dairy straight from the farm.</p>
+                                </div>
+                            </div>
+                            <!-- Benefits Item End -->
+
+                            <!-- Benefits Item Start -->
+                            <div class="benefits-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-benefits-item-2.svg" alt="">
+                                </div>
+                                <div class="benefits-item-content">
+                                    <h3>Clean, Natural & Additive-Free</h3>
+                                    <p>Our milk is exactly what it should be - pure, simple, and free from anything artificial.</p>
+                                </div>
+                            </div>
+                            <!-- Benefits Item End -->
+                        </div>
+                        <!-- Benefits Item Box End -->
+
+                        <!-- Benefits Button Start -->
+                        <div class="benefits-btn wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
+                        </div>
+                        <!-- Benefits Button End -->
+                    </div>
+                    <!-- Our Benefits Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Benefits Section End -->
+
+    <!-- Our Product Section Start -->
+    <div class="our-product">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">Our Product</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Explore our range of fresh dairy products</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Our Product Box Start -->
+                    <div class="our-product-box">
+                        <!-- Product Item Start -->
+                        <div class="product-item wow fadeInUp">
+                            <div class="product-image">
+                                <img src="{{asset('')}}web-assets/images/product-image-1.png" alt="">
+                            </div>
+                            <div class="product-item-body">
+                                <div class="product-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-item-content">
+                                    <h2>PureFarm Fresh Milk</h2>
+                                    <h3 class="product-price">$25.0 <span>$35.00</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Item End -->
+
+                        <!-- Product Item Start -->
+                        <div class="product-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="product-image">
+                                <img src="{{asset('')}}web-assets/images/product-image-2.png" alt="">
+                            </div>
+                            <div class="product-item-body">
+                                <div class="product-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-item-content">
+                                    <h2>MilkyMist Cheese Cubes</h2>
+                                    <h3 class="product-price">$45.00 <span>$55.00</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Item End -->
+
+                        <!-- Product Item Start -->
+                        <div class="product-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="product-image">
+                                <img src="{{asset('')}}web-assets/images/product-image-3.png" alt="">
+                            </div>
+                            <div class="product-item-body">
+                                <div class="product-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-item-content">
+                                    <h2>PurePaneer Block</h2>
+                                    <h3 class="product-price">$50.00 <span>$60.00</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Item End -->
+
+                        <!-- Product Item Start -->
+                        <div class="product-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="product-image">
+                                <img src="{{asset('')}}web-assets/images/product-image-4.png" alt="">
+                            </div>
+                            <div class="product-item-body">
+                                <div class="product-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-item-content">
+                                    <h2>DailyWhisk Curd</h2>
+                                    <h3 class="product-price">$35.00 <span>$45.00</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Item End -->
+                    </div>
+                    <!-- Our Product Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Product Offer Box Start -->
+                    <div class="product-offer-box">
+                        <!-- Product Offer Item Start -->
+                        <div class="product-offer-item wow fadeInUp">
+                            <div class="product-offer-image">
+                                <img src="{{asset('')}}web-assets/images/product-offer-img-1.jpg" alt="">
+                            </div>
+                            <div class="product-offer-content">
+                                <h2>20% Off Weekly Farm Fresh Pack</h2>
+                                <p>Enjoy a week of wholesome goodness with our specially curated dairy essentials - fresh, natural, and delivered straight from the farm at a great value.</p>
+                            </div>
+                        </div>
+                        <!-- Product Offer Item End -->
+
+                        <!-- Product Offer Item Start -->
+                        <div class="product-offer-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="product-offer-image">
+                                <img src="{{asset('')}}web-assets/images/product-offer-img-2.jpg" alt="">
+                            </div>
+                            <div class="product-offer-content">
+                                <h2>Pure Milk Subscription - Save 20%</h2>
+                                <p>Get fresh, additive-free milk delivered to your doorstep every morning. Subscribe now and enjoy the taste of purity while saving on your monthly dairy needs.</p>
+                            </div>
+                        </div>
+                        <!-- Product Offer Item End -->
+                    </div>
+                    <!-- Product Offer Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Product Section End -->
+
+    <!-- Our Testimonials Section Start -->
+    <div class="our-testimonials dark-section parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Testimonial Content Start -->
+                    <div class="our-testimonial-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">our testimonials</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Real feedback from families and businesses we serve</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Testimonial Slider Start -->
+                        <div class="testimonial-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper" data-cursor-text="Drag">
+                                    <!-- Testimonial Slide Start -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-company-logo">
+                                                <img src="{{asset('')}}web-assets/images/company-logo-1.svg" alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>I recommend this milk to all my clients. It's not just free from additives — it's naturally rich in nutrients, easy to digest, and incredibly fresh. It's reassuring to know it comes from cows raised ethically
+                                                    and without artificial hormones.</p>
+                                            </div>
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{asset('')}}web-assets/images/author-1.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Matthew Lansberry</h3>
+                                                    <p>Ceo & Founder</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial Slide End -->
+
+                                    <!-- Testimonial Slide Start -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-company-logo">
+                                                <img src="{{asset('')}}web-assets/images/company-logo-1.svg" alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>I recommend this milk to all my clients. It's not just free from additives — it's naturally rich in nutrients, easy to digest, and incredibly fresh. It's reassuring to know it comes from cows raised ethically
+                                                    and without artificial hormones.</p>
+                                            </div>
+                                            <div class="testimonial-author">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="{{asset('')}}web-assets/images/author-2.jpg" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="author-content">
+                                                    <h3>Wade Warren</h3>
+                                                    <p>Molecular Biologist</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial Slide End -->
+                                </div>
+                                <div class="testimonial-btn">
+                                    <div class="testimonial-button-prev"></div>
+                                    <div class="testimonial-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slider End -->
+                    </div>
+                    <!-- Testimonial Content End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Testimonials Image Box Start -->
+                    <div class="testimonials-image-box">
+                        <!-- Testimonials Image Start -->
+                        <div class="testimonials-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('')}}web-assets/images/testimonials-image.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Testimonials Image End -->
+
+                        <!-- Trusted Clients Box Start -->
+                        <div class="trusted-clients-box wow fadeInUp">
+                            <!-- Trusted Clients Images Start -->
+                            <div class="trusted-clients-images">
+                                <div class="trusted-clients-image">
+                                    <figure class="image-anime">
+                                        <img src="{{asset('')}}web-assets/images/trusted-clients-img-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="trusted-clients-image">
+                                    <figure class="image-anime">
+                                        <img src="{{asset('')}}web-assets/images/trusted-clients-img-2.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="trusted-clients-image">
+                                    <figure class="image-anime">
+                                        <img src="{{asset('')}}web-assets/images/trusted-clients-img-3.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="trusted-clients-image">
+                                    <figure class="image-anime">
+                                        <img src="{{asset('')}}web-assets/images/trusted-clients-img-4.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Trusted Clients Images End -->
+
+                            <!-- Satisfy Client Content Start -->
+                            <div class="trusted-clients-content">
+                                <p>Trusted by 3,000+ Happy Milk Lovers Worldwide</p>
+                            </div>
+                            <!-- Satisfy Client Content End -->
+                        </div>
+                        <!-- Trusted Clients Box End -->
+                    </div>
+                    <!-- Testimonials Image Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Testimonials Section End -->
+
+    <!-- Our Feature Section Start -->
+    <div class="our-feature">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 order-lg-1 order-1">
+                    <!-- Feature Content Start -->
+                    <div class="feature-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">our feature</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Pure dairy trusted every day</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Feature List Start -->
+                        <div class="feature-list wow fadeInUp" data-wow-delay="0.2s">
+                            <ul>
+                                <li>Serving 3,000+ happy customer & growing daily.</li>
+                                <li>Milk, butter, ghee, yogurt, paneer, and more.</li>
+                                <li>Regular lab checks to guarantee purity & safety.</li>
+                            </ul>
+                        </div>
+                        <!-- Feature List End -->
+
+                        <!-- Feature Body List Start -->
+                        <div class="feature-body-list wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Feature Body Item Start -->
+                            <div class="feature-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-feature-body-1.svg" alt="">
+                                </div>
+                                <div class="feature-item-content">
+                                    <h3>Stringent Quality Testing</h3>
+                                </div>
+                            </div>
+                            <!-- Feature Body Item End -->
+
+                            <!-- Feature Body Item Start -->
+                            <div class="feature-item">
+                                <div class="icon-box">
+                                    <img src="{{asset('')}}web-assets/images/icon-feature-body-2.svg" alt="">
+                                </div>
+                                <div class="feature-item-content">
+                                    <h3>Family-Owned & Operated</h3>
+                                </div>
+                            </div>
+                            <!-- Feature Body Item End -->
+                        </div>
+                        <!-- Feature Body List End -->
+                    </div>
+                    <!-- Feature Content End -->
+                </div>
+
+                <div class="col-lg-4 order-lg-2 order-md-3 order-2">
+                    <!-- Feature Image Start -->
+                    <div class="feature-image">
+                        <figure>
+                            <img src="{{asset('')}}web-assets/images/feature-image.png" alt="">
+                        </figure>
+                    </div>
+                    <!-- Feature Image End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 order-lg-3 order-md-2 order-3">
+                    <!-- Feature Item List Start -->
+                    <div class="feature-item-list">
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-feature-1.svg" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>100% Pure & Fresh Milk</h3>
+                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-feature-2.svg" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>Farm-to-Table Freshness</h3>
+                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="{{asset('')}}web-assets/images/icon-feature-3.svg" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>Organic & Chemical-Free</h3>
+                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+                    </div>
+                    <!-- Feature Item List End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Feature Section End -->
+
+    <!-- Our FAQs Section Start -->
+    <div class="our-faqs dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                    <!-- Our FAQs Content Start -->
+                    <div class="our-faqs-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">Frequently asked questions</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Everything you need to know about our dairy</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Got questions? We've got answers. From how our milk is processed and delivered to details about our cows, sustainability efforts, and quality standards.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- FAQ Accordion Start -->
+                        <div class="faq-accordion" id="accordion">
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Is your milk 100% natural and free from additives?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/faqs-accordion-img.jpg" alt="">
+                                        </figure>
+                                        <p>Our milk is source directly from healthy pasture raised cows and goats, and is completely free from artificial additives, preservatives, and growth hormones. We never compromise on quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        How do you ensure the quality and safety of your milk?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/faqs-accordion-img.jpg" alt="">
+                                        </figure>
+                                        <p>Our milk is source directly from healthy pasture raised cows and goats, and is completely free from artificial additives, preservatives, and growth hormones. We never compromise on quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Do you offer home delivery services?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <figure class="image-anime">
+                                            <img src="{{asset('')}}web-assets/images/faqs-accordion-img.jpg" alt="">
+                                        </figure>
+                                        <p>Our milk is source directly from healthy pasture raised cows and goats, and is completely free from artificial additives, preservatives, and growth hormones. We never compromise on quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+                        </div>
+                        <!-- FAQ Accordion End -->
+                    </div>
+                    <!-- Our FAQs Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our FAQs Section End -->
+
+    <!-- Our Blog Section Start -->
+    <div class="our-blog">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Our blogs</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Insights, tips & stories about dairy, health</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Section Button Start -->
+                    <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="blog.html" class="btn-default">view all blogs</a>
+                    </div>
+                    <!-- Section Button End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/post-1.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">The Role of Biodiversity in Sustainable Dairy Farming</a></h2>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Item Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                            <!-- Post Item Readmore Button End-->
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/post-2.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</a></h2>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Item Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                            <!-- Post Item Readmore Button End-->
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="{{asset('')}}web-assets/images/post-3.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <!-- Post Item Content Start -->
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">How Organic Dairy Farming Supports a Healthier Planet</a></h2>
+                            </div>
+                            <!-- Post Item Content End -->
+
+                            <!-- Post Item Readmore Button Start-->
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                            <!-- Post Item Readmore Button End-->
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Blog Section End -->
+
+    <!-- Footer Start -->
+   @include('layouts.mainsite.footer')
