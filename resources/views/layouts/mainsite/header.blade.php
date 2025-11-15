@@ -98,7 +98,7 @@
 
                         <!-- Header Btn Start -->
                         <div class="header-btn">
-                            <a href="contact.html" class="btn-default">Get Started</a>
+                            <a href="{{route('register')}}" class="btn-default">Register</a>
                         </div>
                         <!-- Header Btn End -->
                     </div>

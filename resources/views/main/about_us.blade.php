@@ -40,7 +40,7 @@
                         </h1>
                         <nav class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('Index')}}">home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">About us</li>
                             </ol>
                         </nav>
@@ -1187,7 +1187,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Commitment to 100% Natural</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>We offer dairy products made from pure, natural milk with absolutely no preservatives or additives. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1205,7 +1205,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Farm-Fresh Milk Every Day</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Enjoy fresh milk delivered daily from our farm, ensuring the highest level of purity and taste. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1223,7 +1223,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Pure, Natural, No Chemicals</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Our milk is sourced from cows raised without chemicals, pesticides, or artificial growth boosters </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1254,7 +1254,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Rigorous Quality Control</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Every batch of milk is tested for purity, hygiene, and freshness to guarantee the safest dairy for your family. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1272,7 +1272,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Eco-Friendly Farming Practices</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>We follow sustainable and environment-friendly farming methods that protect nature and promote healthy dairy production. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1290,7 +1290,7 @@
                             <!-- Why Choose Content Start -->
                             <div class="why-choose-content">
                                 <h3>Trusted By Thousands Daily</h3>
-                                <p>We provide dairy that's completely free from </p>
+                                <p>Families rely on us every day for fresh, wholesome milk they can trust for health, nutrition, and taste. </p>
                             </div>
                             <!-- Why Choose Content End -->
                         </div>
@@ -1469,8 +1469,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Farm-Fresh Quality Guaranteed</h3>
-                                    <p>Our milk is sourced directly from our own farm, ensuring the freshest &amp;
-                                        highest quality.</p>
+                                    <p>Our milk comes directly from our own well-maintained dairy farm, ensuring unmatched freshness and exceptional quality in every drop.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -1483,8 +1482,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>100% Natural and Pure</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every
-                                        morning.</p>
+                                    <p>We deliver naturally produced, chemical-free milk and dairy products to your doorstep every morning—fresh, pure, and full of nutrition.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -1497,8 +1495,7 @@
                                 </div>
                                 <div class="intro-video-content">
                                     <h3>Eco-Friendly Packaging</h3>
-                                    <p>We offer reliable doorstep delivery of milk and dairy products—fresh every
-                                        morning.</p>
+                                    <p>We use safe, eco-friendly, and hygienic packaging to preserve purity while protecting the environment—making every delivery responsible and sustainable.</p>
                                 </div>
                             </div>
                             <!-- Intro Video Item End -->
@@ -3435,7 +3432,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>100% Pure &amp; Fresh Milk</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>Fresh milk sourced directly from our healthy cows, ensuring natural purity and rich nutrition in every drop.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -3448,7 +3445,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>Farm-to-Table Freshness</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>We bring milk straight from our farm to your home without any middlemen, keeping the freshness and quality fully intact.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->
@@ -3461,7 +3458,7 @@
                             </div>
                             <div class="feature-item-content">
                                 <h3>Organic &amp; Chemical-Free</h3>
-                                <p>We are dedicated to delivering products made entirely from natural ingredients.</p>
+                                <p>Our dairy products are crafted from naturally produced milk—completely free from chemicals, preservatives, and artificial additives.</p>
                             </div>
                         </div>
                         <!-- Feature Item End -->

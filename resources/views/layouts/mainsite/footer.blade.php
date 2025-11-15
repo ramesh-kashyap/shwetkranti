@@ -59,7 +59,7 @@
                             <!-- Footer Links End -->
 
                             <!-- Footer Links Start -->
-                            <div class="footer-links">
+                            <!-- <div class="footer-links">
                                 <h3>Careers</h3>
                                 <ul>
                                     <li><a href="#">Delivery & Logistics</a></li>
@@ -67,7 +67,7 @@
                                     <li><a href="#">Farmhands</a></li>
                                     <li><a href="#"> FSSAI/ISO/GMP</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Footer Links End -->
 
                             <!-- Footer Newsletter Form Start -->
