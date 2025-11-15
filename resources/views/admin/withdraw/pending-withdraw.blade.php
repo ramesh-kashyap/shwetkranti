@@ -68,9 +68,9 @@
 
 
                                         <th>User ID</th>
-                                        <th>Request Amount</th>
-                                        <th>Charge 5%</th>
-                                        <th>Net Amount</th>
+                                        <th> Amount</th>
+                                        <!-- <th>Charge 5%</th> -->
+                                        <!-- <th>Net Amount</th> -->
 
 
                                         <th>Payment Mode.</th>
@@ -94,8 +94,8 @@
                                             <td>{{ $value->user_id_fk }}</td>
 
                                             <td>{{currency()}} {{ $value->amount }} </td>
-                                             <td>{{currency()}} {{ ($value->amount*5/100) }}</td>
-                                                <td>{{currency()}} {{ ($value->amount-$value->amount*5/100) }}</td>
+                                             <!-- <td>{{currency()}} {{ ($value->amount*5/100) }}</td>
+                                                <td>{{currency()}} {{ ($value->amount-$value->amount*5/100) }}</td> -->
                                             <td> {{ $value->payment_mode }} </td>
 
                                             <td>{{ $value->created_at }}</td>
