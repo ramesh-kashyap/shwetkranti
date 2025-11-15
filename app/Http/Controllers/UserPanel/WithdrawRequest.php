@@ -46,14 +46,18 @@ class WithdrawRequest extends Controller
         return $this->dashboard_layout();
     }
 
-    public function WithdrawRequest(Request $request)
+
+
+
+
+   public function WithdrawRequest(Request $request)
     {
 
         try{
 
              $validation =  Validator::make($request->all(), [
-            'amount' => 'required|numeric|min:10',
-             'trx_address' => 'required',    
+            'amount' => 'required|numeric|min:5',
+             'paymentMode' => 'required',    
             'transaction_password' => 'required',
 
 
@@ -67,16 +71,22 @@ class WithdrawRequest extends Controller
 
         $user=Auth::user();
         $password= $request->transaction_password;
+
         $balance=Auth::user()->available_balance();
-
- $user_direct = User::where('sponsor', $user->id)
-                   ->where('active_status', 'Active')
-                   ->count();
-
-if ($user_direct < 1) {
-    return Redirect::back()->withErrors(['You must have at least 1 active direct referral to place a withdraw request.']);
-}
-
+        // dd($balance);
+         $bank=Bank::where('user_id',$user->id)->first();
+         $bank = $bank?$bank->account_no:'';
+         $account = '';
+       
+       if($request->paymentMode=="USDT")
+        {
+             $account =$user->trx_addres; 
+        }
+       if($request->paymentMode=="INR")
+        {
+             $account =$bank; 
+        }
+      
 
         if ($balance>=$request->amount)
         {
@@ -89,20 +99,23 @@ if ($user_direct < 1) {
          else
          {
 
-          if(!empty($user->trx_addres))
-              {
-              if (Hash::check($password, $user->tpassword))
-               {
            
+            if(empty($account))
+            {
+              return Redirect::back()->withErrors(array('Update Your bank Kyc & Wallet')); 
 
-               
+            }
+
+               if (Hash::check($password, $user->tpassword))
+                {
+           
                    $data = [
-                        // 'txn_id' =>$result['result']['id'],     
+                        'txn_id' =>md5(uniqid(rand(), true)),     
                         'user_id' => $user->id,
                         'user_id_fk' => $user->username,
                         'amount' => $request->amount,
-                        'account' => $user->trx_addres,
-                        'payment_mode' => 'USDT',
+                        'account' => $account,
+                        'payment_mode' =>$request->paymentMode,
                         'status' => 'Pending',
                         'wdate' => Date("Y-m-d"),
                     
@@ -114,19 +127,15 @@ if ($user_direct < 1) {
             $notify[] = ['success','Withdraw Request Submited successfully'];
     
             return redirect()->back()->withNotify($notify);
-                   
            
-              }
+               
+               }
                 else
                 {
                 return Redirect::back()->withErrors(array('Invalid Transaction Password'));
                 }     
                 
-              }
-              else
-                {
-                return Redirect::back()->withErrors(array('Please Update Your USDT Payment Address'));
-                }  
+           
 
 
          }
@@ -150,6 +159,8 @@ if ($user_direct < 1) {
 
 
     }
+
+
 
     public function WithdrawHistory(Request $request){
 

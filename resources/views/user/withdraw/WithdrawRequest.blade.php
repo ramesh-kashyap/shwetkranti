@@ -33,17 +33,18 @@
                                                     value="" >
                                             </div>
 
-                                            <div class="mb-3 col-md-12">
-                                                <label class="form-label">Payment Mode</label>
-                                                <input class="form-control" readonly type="text" placeholder=""  name="payment_mode"  value="USDT" >
-                                            </div>
+                                          <div class="mb-3 col-md-12">
+                                              <label class="form-label">Payment Mode</label>
+                                          
 
-                                            <div class="mb-3 col-md-12">
-                                                <label class="form-label">Wallet Adress</label>
-                                               <input type="text"  value="{{Auth::user()->trx_addres}}" readonly name="trx_address" placeholder="Wallet Adress"
-                                                class="form-control" required=""
-                                                aria-invalid="false">
-                                            </div>
+                                                    <select name="paymentMode" required
+                                        class="form-control">
+                                        <option value="INR">INR</option>
+                                        <option value="USDT">USDT</option>
+
+                                    </select>
+                                          </div>
+
 
                                             <div class="mb-3 col-md-12">
                                                 <label class="form-label">Transaction Password</label>
