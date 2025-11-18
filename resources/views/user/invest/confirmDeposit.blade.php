@@ -63,35 +63,7 @@
                                         Copy
                                     </button>
                                 </p>
-                                <script>
-                                    function copyWalletAddress() {
-                                        const walletText = document.getElementById("walletAddress").innerText;
-                                        navigator.clipboard.writeText(walletText).then(() => {
-                                            alert("Wallet address copied!");
-                                        }).catch(err => {
-                                            console.error("Error copying text: ", err);
-                                        });
-                                    }
-                                </script>
-
-                                <style>
-                                    /* Sirf wallet copy button ke liye style */
-                                    .wallet-copy-btn {
-                                        font-size: 12px;
-                                        padding: 2px 6px;
-                                        margin-left: 5px;
-                                        border-radius: 4px;
-                                        border: 1px solid #007bff;
-                                        background-color: #007bff;
-                                        color: #fff;
-                                        cursor: pointer;
-                                    }
-
-                                    .wallet-copy-btn:hover {
-                                        background-color: #0056b3;
-                                        border-color: #0056b3;
-                                    }
-                                </style>
+                            
                             </div>
                             @endif
 

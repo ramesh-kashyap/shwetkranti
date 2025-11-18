@@ -91,7 +91,7 @@
         }
 
         .brand-logo img {
-            width: 230px;
+            width: 110px;
         }
 
         @media only screen and (max-width: 767px) {
@@ -155,10 +155,10 @@
         <div class="nav-header">
             <a href="{{route('user.dashboard')}}" class="brand-logo">
                 <!-- Desktop Logo -->
-                <img src="{{asset('upnl/images/tronfx.png')}}" class="desktop-logo" alt="">
+                <img src="{{asset('web-assets/images/logo3-swetkranti.png')}}" class="desktop-logo" alt="">
 
                 <!-- Mobile Logo -->
-                <img src="{{asset('upnl/images/ocean-fav.png')}}" class="mobile-logo" alt="">
+                <img src="{{asset('web-assets/images/logo3-swetkranti.png')}}" class="mobile-logo" alt="">
             </a>
 
             <!-- Hamburger Menu -->
