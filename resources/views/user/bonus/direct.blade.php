@@ -7,7 +7,7 @@
 				<div class="row page-titles">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item active"><a href="javascript:void(0)">Profit Summary </a></li>
-						<li class="breadcrumb-item"><a href="javascript:void(0)">Direct Sponsor Level Income</a></li>
+						<li class="breadcrumb-item"><a href="javascript:void(0)">Reward Income</a></li>
 					</ol>
                 </div>
                 <!-- row -->
@@ -17,7 +17,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Direct Sponsor Level Income</h4>
+                                <h4 class="card-title">Reward Income</h4>
                             </div>
                             <div class="card-body">
                                 <div id="example_wrapper" class="dataTables_wrapper">

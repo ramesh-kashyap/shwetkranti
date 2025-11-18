@@ -35,7 +35,7 @@ class Invest extends Controller
 
 
    
-public function fundActivation(Request $request)
+public function fundActivation1(Request $request)
 {
     try {
         $validation = Validator::make($request->all(), [
@@ -558,6 +558,134 @@ $rand = rand(1000, 9999999);
 
 
         }
+
+
+
+
+
+
+
+
+
+public function confirmDeposit(Request $request)
+{
+    try {
+        // ✅ Validation
+        $validator = Validator::make($request->all(), [
+            'amount'      => 'required|numeric',
+            'paymentMode' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        // ✅ Input values
+        $amount = $request->amount;
+        $paymentMode = $request->paymentMode;
+
+        // ✅ Bank / Wallet details
+        if ($paymentMode == "INR") {  
+            // Sirf INR ke liye Bank details dikhengi
+            $walletAddress = null;
+            $bankDetails = DB::table('general_settings')
+                ->select('account_no', 'ifsc_code', 'branch_name', 'bank_name')
+                ->first();
+        } else {
+            // Baaki sab modes ke liye Wallet address
+            $walletAddress = DB::table('general_settings')->value('usdtBep20');
+            $bankDetails = null;
+        }
+
+        // ✅ Return confirm page
+        return view('user.invest.confirmDeposit', [
+            'amount'        => $amount,
+            'wallet_address'=> $walletAddress,
+            'bankDetails'   => $bankDetails,
+            'paymentMode'   => $paymentMode
+        ]);
+
+    } catch (Exception $e) {
+        return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
+    }
+}
+
+
+
+
+
+
+
+  public function fundActivation(Request $request)
+  {
+    try {
+      // âœ… Validation
+      $validation = Validator::make($request->all(), [
+        'amount' => 'required|numeric',
+        'paymentMode' => 'required',
+        'utrno' => 'required',
+      ]);
+
+      if ($validation->fails()) {
+        Log::info($validation->getMessageBag()->first());
+        return redirect()
+          ->route('user.invest')
+          ->withErrors($validation->getMessageBag()->first())
+          ->withInput();
+      }
+
+      // âœ… Current logged-in user
+      $user = Auth::user();
+      $user_detail = User::where('username', $user->username)
+        ->orderBy('id', 'desc')
+        ->first();
+
+      // âœ… Latest investment check
+      $invest_check = Investment::where('user_id', $user_detail->id)
+        ->where('status', '!=', 'Decline')
+        ->orderBy('id', 'desc')
+        ->first();
+
+      $invoice = substr(str_shuffle("0123456789"), 0, 7);
+      $joining_amt = $request->amount;
+      $last_package = $invest_check ? $invest_check->amount : 0;
+
+      // âœ… Handle file upload
+      if ($request->hasFile('account')) {
+        $image = $request->file('account');
+        $imageName = time() . '_' . $image->getClientOriginalName();
+        $image->move(public_path('uploads/'), $imageName);
+      } else {
+        $imageName = null;
+      }
+
+      // âœ… Store in DB
+      $data = [
+        'transaction_id'         => $request->utrno,
+        'user_id'       => $user_detail->id,
+        'user_id_fk'    => $user_detail->username,
+        'amount'        => $request->amount,
+        'status'        => 'Pending',
+        'payment_mode'  => $request->paymentMode, 
+        'slip'          => $imageName,
+        'sdate'         => date("Y-m-d"),
+      ];
+
+      Investment::insert($data);
+
+      // âœ… Success message
+      $notify[] = ['success', 'Your fund request has been submitted successfully'];
+      return redirect()->route('user.invest')->withNotify($notify);
+    } catch (\Exception $e) {
+      Log::info('error here');
+      Log::info($e->getMessage());
+      return redirect()
+        ->route('user.invest')
+        ->withErrors($e->getMessage())
+        ->withInput();
+    }
+  }
+
 
 
 

@@ -80,23 +80,23 @@
                                 <!-- Footer Newsletter Title End -->
 
                                 <!-- Newsletter Form Start -->
-                                <!-- <div class="newsletter-form">
+                                <div class="newsletter-form">
                                     <form id="newslettersForm" action="#" method="POST">
                                         <div class="form-group">
                                             <input type="email" name="mail" class="form-control" id="mail" placeholder="Email Address *" required>
                                             <button type="submit" class="newsletter-btn"><i class="fa-regular fa-paper-plane"></i></button>
                                         </div>
                                     </form>
-                                </div> -->
+                                </div>
                                 <!-- Newsletter Form End -->
 
                                 <!-- Footer Contact Item Start -->
-                                <!-- <div class="footer-contact-item">
+                                <div class="footer-contact-item">
                                     <div class="footer-contact-item-header">
                                         <img src="{{asset('')}}web-assets/images/icon-mail-accent.svg" alt="">
                                         <p><a href="mailto:support@domainname.com">support@domainname.com</a></p>
                                     </div>
-                                </div> -->
+                                </div>
                                 <!-- Footer Contact Item End -->
                             </div>
                             <!-- Footer Newsletter Form End -->

@@ -91,6 +91,10 @@ Route::post('/walletTransfers', [App\Http\Controllers\UserPanel\AddFund::class, 
 
 // invest
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
+Route::any('/confirmDeposit', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit'])->name('user.confirmDeposit');
+
+Route::any('/confirmDeposits', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposits'])->name('user.confirmDeposits');
+
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
 Route::get('/DepositHistory', [App\Http\Controllers\UserPanel\Invest::class, 'invest_list'])->name('user.DepositHistory');
 Route::get('/boster', [App\Http\Controllers\UserPanel\Invest::class, 'boster'])->name('user.boster');
@@ -112,12 +116,12 @@ Route::get('/level-team', [App\Http\Controllers\UserPanel\Team::class, 'LevelTea
 //end team
 
 //bonus
-Route::get('/ocenan_income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.ocenan_income');
-Route::get('/Self_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_income'])->name('user.Self_income');
+Route::get('/fast_track_income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.ocenan_income');
+Route::get('/cbr_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_income'])->name('user.Self_income');
 Route::get('/reward-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'reward_income'])->name('user.reward-bonus');
-Route::get('/team_bonanza', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.team_bonanza');
-Route::get('/Direct_Sponsor_Income', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_bonus'])->name('user.Direct_Sponsor_Income');
-Route::get('/direct_sponor_level', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_sponor_level'])->name('user.direct_sponor_level');
+Route::get('/royalty_income', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.team_bonanza');
+Route::get('/referral_Income', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_bonus'])->name('user.Direct_Sponsor_Income');
+Route::get('/reward_income', [App\Http\Controllers\UserPanel\Bonus::class, 'direct_sponor_level'])->name('user.direct_sponor_level');
 
 //end bonus
 
@@ -191,11 +195,11 @@ Route::group(['middleware' => ['admin']], function ()
 //end fundController
 
 //bonusController
-Route::get('sponsor_direct', [App\Http\Controllers\Admin\BonusController::class, 'roi_bonus'])->name('admin.sponsor_direct');
-Route::get('ocean_income', [App\Http\Controllers\Admin\BonusController::class, 'level_bonus'])->name('admin.ocean_income');
-Route::get('Self_Income', [App\Http\Controllers\Admin\BonusController::class, 'sponsor_bonus'])->name('admin.Self_Income');
-Route::get('direct_Income', [App\Http\Controllers\Admin\BonusController::class, 'reward_bonus'])->name('admin.direct_Income');
-Route::get('Bonanza_income', [App\Http\Controllers\Admin\BonusController::class, 'Bonanza_income'])->name('admin.Bonanza_income');
+Route::get('cbr_income', [App\Http\Controllers\Admin\BonusController::class, 'roi_bonus'])->name('admin.sponsor_direct');
+Route::get('referral_income', [App\Http\Controllers\Admin\BonusController::class, 'level_bonus'])->name('admin.ocean_income');
+Route::get('reward_Income', [App\Http\Controllers\Admin\BonusController::class, 'sponsor_bonus'])->name('admin.Self_Income');
+Route::get('fast_track_income', [App\Http\Controllers\Admin\BonusController::class, 'reward_bonus'])->name('admin.direct_Income');
+Route::get('royalty_income', [App\Http\Controllers\Admin\BonusController::class, 'Bonanza_income'])->name('admin.Bonanza_income');
 
 
 

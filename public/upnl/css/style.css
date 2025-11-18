@@ -1925,9 +1925,9 @@ progress {
 
   .col-xl-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 50%; 
   }
-
+/* // chnages */
   .col-xl-7 {
     flex: 0 0 auto;
     width: 58.33333%;
@@ -13460,7 +13460,7 @@ label {
 }
 
 [data-theme-version="dark"] #preloader {
-  background: #171622;
+  background:#39251a;
 }
 
 [data-theme-version="dark"] .waviy span {
@@ -21642,7 +21642,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-theme-version="dark"] .chatbox .contacts li:hover {
-  background-color: #171622;
+  background-color: #39251a;
 }
 
 .chatbox .contacts .name-first-letter {
@@ -21657,7 +21657,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-theme-version="dark"] .chatbox .contacts .name-first-letter {
   color: #fff;
-  background: #171622;
+  background: #39251a;
 }
 
 .chatbox .contacts_body {
@@ -21758,7 +21758,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-theme-version="dark"] .chatbox .msg_cotainer_send {
-  background: #171622;
+  background: #39251a;
   color: #fff;
 }
 
@@ -21781,7 +21781,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-theme-version="dark"] .chatbox .msg_cotainer_send:after {
-  border-left: 10px solid #171622;
+  border-left: 10px solid #39251a;
 }
 
 .chatbox .type_msg .form-control {
@@ -29733,12 +29733,12 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-theme-version="transparent"] .dropdown-item:hover,
 [data-theme-version="transparent"] .dropdown-item:focus {
-  background-color: #171622;
+  background-color: #39251a;
   color: #fff;
 }
 
 [data-theme-version="transparent"] .form-control {
-  background-color: #171622;
+  background-color: #39251a;
   border-color: #2e2e42;
   color: #fff;
 }
@@ -29874,7 +29874,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-theme-version="dark"] {
-  background: #171622;
+  background: #39251a;
   color: #828690;
   --nav-headbg: #212130;
   --sidebar-bg: #212130;

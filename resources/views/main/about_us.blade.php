@@ -108,7 +108,7 @@
 
                             <!-- About Us Circle Start -->
                             <div class="about-us-circle">
-                                <a href="#"><img src="{{asset('')}}web-assets/images/about-us-circle.svg" alt=""></a>
+                                <a href="about.html"><img src="{{asset('')}}web-assets/images/about-us-circle.svg" alt=""></a>
                             </div>
                             <!-- About Us Circle End -->
                         </div>
@@ -342,7 +342,7 @@
                         <!-- About Us Button Start -->
                         <div class="about-us-btn wow fadeInUp" data-wow-delay="0.8s"
                             style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
-                            <a href="{{route('contact')}}" class="btn-default">contact now</a>
+                            <a href="contact.html" class="btn-default">contact now</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -732,7 +732,7 @@
                         <!-- What We Do Button Start -->
                         <div class="what-we-do-btn wow fadeInUp" data-wow-delay="0.4s"
                             style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
-                            <a href="{{route('contact')}}" class="btn-default">What We Offer</a>
+                            <a href="contact.html" class="btn-default">What We Offer</a>
                         </div>
                         <!-- What We Do Button End -->
 
@@ -848,7 +848,7 @@
 
                         <!-- Learn More Circle Start -->
                         <div class="learn-more-circle">
-                            <a href="#">
+                            <a href="contact.html">
                                 <img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt="">
                             </a>
                         </div>
@@ -1787,7 +1787,7 @@
                                 <!-- Quality Button Start -->
                                 <div class="quality-button wow fadeInUp" data-wow-delay="0.2s"
                                     style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
-                                    <a href="{{route('contact')}}" class="btn-default">contact us</a>
+                                    <a href="contact.html" class="btn-default">contact us</a>
                                 </div>
                                 <!-- Quality Button End -->
                             </div>
@@ -1972,7 +1972,7 @@
                         <div class="benefits-image-box-2">
                             <!-- Learn More Circle Start -->
                             <div class="learn-more-circle">
-                                <a href="#"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
+                                <a href="about.html"><img src="{{asset('')}}web-assets/images/learn-more-circle.svg" alt=""></a>
                             </div>
                             <!-- Learn More Circle End -->
 
@@ -2177,7 +2177,7 @@
                         <!-- Benefits Button Start -->
                         <div class="benefits-btn wow fadeInUp" data-wow-delay="0.6s"
                             style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
-                            <a href="{{route('contact')}}" class="btn-default">Contact Us Today!</a>
+                            <a href="contact.html" class="btn-default">Contact Us Today!</a>
                         </div>
                         <!-- Benefits Button End -->
                     </div>
@@ -2333,7 +2333,7 @@
                     <div class="team-item wow fadeInUp" style="visibility: hidden; animation-name: none;">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="#" data-cursor-text="View">
+                            <a href="team-single.html" data-cursor-text="View">
                                 <figure>
                                     <img src="{{asset('')}}web-assets/images/team-1.jpg" alt="">
                                 </figure>
@@ -2354,7 +2354,7 @@
 
                         <!-- Team Content Start -->
                         <div class="team-content">
-                            <h3><a href="#">Olivia Brooks</a></h3>
+                            <h3><a href="team-single.html">Olivia Brooks</a></h3>
                             <p>Client Manager</p>
                         </div>
                         <!-- Team Content End -->
@@ -2368,7 +2368,7 @@
                         style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="#" data-cursor-text="View">
+                            <a href="team-single.html" data-cursor-text="View">
                                 <figure>
                                     <img src="{{asset('')}}web-assets/images/team-2.jpg" alt="">
                                 </figure>
@@ -2389,7 +2389,7 @@
 
                         <!-- Team Content Start -->
                         <div class="team-content">
-                            <h3><a href="#">Daniel Harris</a></h3>
+                            <h3><a href="team-single.html">Daniel Harris</a></h3>
                             <p>Quality Head</p>
                         </div>
                         <!-- Team Content End -->
@@ -2403,7 +2403,7 @@
                         style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="#" data-cursor-text="View">
+                            <a href="team-single.html" data-cursor-text="View">
                                 <figure>
                                     <img src="{{asset('')}}web-assets/images/team-3.jpg" alt="">
                                 </figure>
@@ -2424,7 +2424,7 @@
 
                         <!-- Team Content Start -->
                         <div class="team-content">
-                            <h3><a href="#">Emily Carter</a></h3>
+                            <h3><a href="team-single.html">Emily Carter</a></h3>
                             <p>Nutrition Expert</p>
                         </div>
                         <!-- Team Content End -->
@@ -2438,7 +2438,7 @@
                         style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
                         <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="#" data-cursor-text="View">
+                            <a href="team-single.html" data-cursor-text="View">
                                 <figure>
                                     <img src="{{asset('')}}web-assets/images/team-4.jpg" alt="">
                                 </figure>
@@ -2459,7 +2459,7 @@
 
                         <!-- Team Content Start -->
                         <div class="team-content">
-                            <h3><a href="#">James Walker</a></h3>
+                            <h3><a href="team-single.html">James Walker</a></h3>
                             <p>Farm Manager</p>
                         </div>
                         <!-- Team Content End -->

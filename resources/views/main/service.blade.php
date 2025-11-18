@@ -70,7 +70,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Organic Dairy Farming</a></h3>
+                            <h3><a href="service-single.html">Organic Dairy Farming</a></h3>
                             <p>We raise our cows on certified organic pastures using sustainable, chemical-free practices to produce pure and natural milk for your family.</p>
                         </div>
                         <div class="icon-box">
@@ -84,7 +84,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Home Delivery Services</a></h3>
+                            <h3><a href="service-single.html">Home Delivery Services</a></h3>
                             <p>We deliver fresh milk and dairy products from our farm straight to your doorstep every morning—ensuring convenience, freshness, and reliability.</p>
                         </div>
                         <div class="icon-box">
@@ -98,7 +98,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Grass-Fed Cow Management</a></h3>
+                            <h3><a href="service-single.html">Grass-Fed Cow Management</a></h3>
                             <p>Our cows follow a 100% grass-based diet, supporting their health and producing milk that is naturally richer in nutrients, taste, and quality.</p>
                         </div>
                         <div class="icon-box">
@@ -112,7 +112,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Cold Chain Logistics</a></h3>
+                            <h3><a href="service-single.html">Cold Chain Logistics</a></h3>
                             <p>We maintain a fully controlled cold-chain system so that every drop of milk stays fresh, safe, and nutritious from farm to home.</p>
                         </div>
                         <div class="icon-box">
@@ -126,7 +126,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Farm Hygiene Monitoring</a></h3>
+                            <h3><a href="service-single.html">Farm Hygiene Monitoring</a></h3>
                             <p>Our dairy farm follows strict hygiene and cleanliness standards, ensuring that our cows, equipment, and environment meet premium safety and quality levels.</p>
                         </div>
                         <div class="icon-box">
@@ -140,7 +140,7 @@
                     <!-- Services Item Start -->
                     <div class="services-item wow fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
                         <div class="services-item-content">
-                            <h3><a href="#">Fresh Milk Packaging</a></h3>
+                            <h3><a href="service-single.html">Fresh Milk Packaging</a></h3>
                             <p>We use modern, food-grade packaging methods to preserve the natural freshness, purity, and taste of our milk without any contamination.</p>
                         </div>
                         <div class="icon-box">
@@ -264,7 +264,7 @@
 
                                 <!-- Quality Button Start -->
                                 <div class="quality-button wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
-                                    <a href="{{route('contact')}}" class="btn-default">contact us</a>
+                                    <a href="contact.html" class="btn-default">contact us</a>
                                 </div>
                                 <!-- Quality Button End -->
                             </div>

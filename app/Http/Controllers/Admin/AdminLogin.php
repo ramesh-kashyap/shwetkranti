@@ -43,6 +43,7 @@ class AdminLogin extends Controller
             // dd($admin); die;
             if(!empty($admin) && isset($admin))
             {
+                
                 if (\Hash::Check($request['password'], $admin->password)){
                     
                     Auth::guard('admin')->login($admin);
