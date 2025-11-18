@@ -127,15 +127,16 @@
     ********************-->
     <div id="preloader">
         <div class="waviy">
-            <span style="--i:1">O</span>
-            <span style="--i:2">C</span>
+            <span style="--i:1">S</span>
+            <span style="--i:2">H</span>
             <span style="--i:3">E</span>
-            <span style="--i:4">A</span>
-            <span style="--i:5">N</span>
-            <span style="--i:6">U</span>
-            <span style="--i:7">S</span>
-            <span style="--i:8">D</span>
+            <span style="--i:4">T</span>
+            <span style="--i:5">K</span>
+            <span style="--i:6">R</span>
+            <span style="--i:7">A</span>
+            <span style="--i:8">N</span>
             <span style="--i:9">T</span>
+            <span style="--i:10">I</span>
 
 
         </div>
