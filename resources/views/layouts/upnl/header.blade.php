@@ -127,8 +127,9 @@
     ********************-->
     <div id="preloader">
         <div class="waviy">
-            <span style="--i:1">S</span>
-            <span style="--i:2">H</span>
+            <span style="--i:0">S</span>
+            <span style="--i:1">H</span>
+            <span style="--i:2">W</span>
             <span style="--i:3">E</span>
             <span style="--i:4">T</span>
             <span style="--i:5">K</span>
